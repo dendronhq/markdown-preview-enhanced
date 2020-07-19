@@ -381,6 +381,16 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.Uri.parse(openFilePath),
         vscode.ViewColumn.One,
       );
+    } else if (href.match(/file\/\/\//)) {
+      const { index } = href.match(/file\/\/\//);
+      // openFilePath = href.slice(8) # remove protocol
+      let openFilePath = href.slice(index + 6);
+      openFilePath = decodeURI(openFilePath);
+      vscode.commands.executeCommand(
+        "vscode.open",
+        vscode.Uri.parse(openFilePath),
+        vscode.ViewColumn.One,
+      );
     } else {
       utility.openFile(href);
     }
