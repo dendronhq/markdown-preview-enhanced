@@ -1,6 +1,6 @@
 {
-  "name": "markdown-preview-enhanced",
-  "displayName": "Markdown Preview Enhanced",
+  "name": "dendron-markdown-preview-enhanced",
+  "displayName": "Dendron Markdown Preview Enhanced",
   "version": "0.5.12",
   "description": "Markdown Preview Enhanced ported to vscode",
   "categories": [
@@ -19,7 +19,7 @@
     "kachkaev",
     "gabyx"
   ],
-  "publisher": "shd101wyy",
+  "publisher": "dendron",
   "main": "./out/src/extension",
   "scripts": {
     "check": "npm run check:eslint && npm run check:prettier && npm run check:tsc && npm run check:tslint",
