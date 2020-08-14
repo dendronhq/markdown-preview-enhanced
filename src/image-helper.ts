@@ -1,4 +1,4 @@
-import { utility } from "@shd101wyy/mume";
+import { utility } from "@dendronhq/mume";
 import * as fs from "fs";
 import * as path from "path";
 import * as vscode from "vscode";

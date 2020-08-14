@@ -1,6 +1,6 @@
-import * as mume from "@shd101wyy/mume";
-import { MarkdownEngine } from "@shd101wyy/mume";
-import { useExternalAddFileProtocolFunction } from "@shd101wyy/mume/out/src/utility";
+import * as mume from "@dendronhq/mume";
+import { MarkdownEngine } from "@dendronhq/mume";
+import { useExternalAddFileProtocolFunction } from "@dendronhq/mume/out/src/utility";
 import * as fs from "fs";
 import { tmpdir } from "os";
 import * as path from "path";

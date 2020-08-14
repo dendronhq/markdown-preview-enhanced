@@ -3,7 +3,7 @@
 import * as path from "path";
 import * as vscode from "vscode";
 
-import { getExtensionConfigPath, utility } from "@shd101wyy/mume";
+import { getExtensionConfigPath, utility } from "@dendronhq/mume";
 
 import { pasteImageFile, uploadImageFile } from "./image-helper";
 import {
