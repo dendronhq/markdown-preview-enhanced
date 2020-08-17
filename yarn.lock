@@ -39,12 +39,43 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
+"@dendronhq/common-all@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.7.0.tgz#9b5b475e0b9776a34643512c82d43d17c2fcd5bd"
+  integrity sha512-wVMAvPOdtJ/kZGFRVYyiPWfOhS9LevEkRl/pNYQBfgwiSa7HD9l7E8d4DqiLBo88gqBKA/Iixvq6J0B+SfVSng==
+  dependencies:
+    dropbox "^4.0.30"
+    gray-matter "^4.0.2"
+    isomorphic-fetch "^2.2.1"
+    lodash "^4.17.15"
+    minimatch "^3.0.4"
+    moment "^2.27.0"
+    pino "^6.3.1"
+    uuid "^8.1.0"
+    vscode-uri "^2.1.2"
+    yamljs "^0.3.0"
+
 "@dendronhq/common-server@^0.6.5":
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.6.5.tgz#115483bfa5749438235741e2cd6d2c6d046d0bf4"
   integrity sha512-urqcZWbO0F+8hBkUzCND53+mkTc8usOnzBilDibupoC0RBVwVy0YwRBZx9NUEXUhvA3hi2So8aNF7M8N0sGuww==
   dependencies:
     "@dendronhq/common-all" "^0.6.1"
+    fs-extra "^9.0.1"
+    gray-matter "^4.0.2"
+    lodash "^4.17.15"
+    minimatch "^3.0.4"
+    pino "^6.3.2"
+    tmp "^0.2.1"
+    vscode-uri "^2.1.2"
+    yamljs "^0.3.0"
+
+"@dendronhq/common-server@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.7.0.tgz#ee8f847b717d4208e8c00eb43132b43449f13472"
+  integrity sha512-iyMqyEB+XtY8j4yM2wbOhB6+U73UIVP35ypgLJPAeu9V5YWuIepfxLEWgXQ/OdPkQm0oBHd4Z7vahxhr8lm1OA==
+  dependencies:
+    "@dendronhq/common-all" "^0.7.0"
     fs-extra "^9.0.1"
     gray-matter "^4.0.2"
     lodash "^4.17.15"
@@ -68,6 +99,26 @@
     lodash "^4.17.15"
     markdown-it "^11.0.0"
     markdown-it-ast "^0.0.1"
+    through2 "^4.0.2"
+    vscode-uri "^2.1.2"
+    yamljs "^0.3.0"
+
+"@dendronhq/engine-server@0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.7.2.tgz#508d22cb5102be502bf785c288cfe709c13de1d1"
+  integrity sha512-Ctu5P0tnXLIrzoGJsUNewukzF94BDZBaFpi4uLsfwEm1l9hdDgsjvry2wMat2G3Bzv2I0i1cGZcoLyqXc2//LA==
+  dependencies:
+    "@dendronhq/common-all" "^0.7.0"
+    "@dendronhq/common-server" "^0.7.0"
+    cross-path-sort "^1.0.0"
+    fs-extra "^9.0.1"
+    fuse.js "^6.3.0"
+    gray-matter "^4.0.2"
+    klaw "^3.0.0"
+    lodash "^4.17.15"
+    markdown-it "^11.0.0"
+    markdown-it-ast "^0.0.1"
+    markdown-it-regex "^0.2.0"
     through2 "^4.0.2"
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
@@ -649,6 +700,11 @@ crc32@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/crc32/-/crc32-0.2.2.tgz#7ad220d6ffdcd119f9fc127a7772cacea390a4ba"
   integrity sha1-etIg1v/c0Rn5/BJ6d3LKzqOQpLo=
+
+cross-path-sort@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/cross-path-sort/-/cross-path-sort-1.0.0.tgz#9c07df9fe5ebdc49d980d99ffcf845f7717865b8"
+  integrity sha512-aNS22Ns5IC2YmotLFBaQLmH+RtRpfjQlnZtUuwlHUaaxMKUeLQ0Pve1c69zgU6jmh2Irug1ZiMex9XkYdm5Mwg==
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
@@ -2219,6 +2275,11 @@ markdown-it-ast@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/markdown-it-ast/-/markdown-it-ast-0.0.1.tgz#8e8473837ab3b32fd1c23653ae6d47663f977538"
   integrity sha1-joRzg3qzsy/RwjZTrm1HZj+XdTg=
+
+markdown-it-regex@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-regex/-/markdown-it-regex-0.2.0.tgz#e09ad2d75209720d591d3949e1142c75c0fbecf6"
+  integrity sha512-111UnMGJSt37gy+DlgcpQNwEfS2jvscOFSztzGhuXUHk7K1J5eAEj6C3jifmKb0cWtTuxdpHgIt4PyGQ+DtDjw==
 
 markdown-it@^11.0.0:
   version "11.0.0"
