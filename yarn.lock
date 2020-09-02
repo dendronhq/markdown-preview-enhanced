@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@dendronhq/common-all@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.8.2.tgz#b30c3ce8496c58a8bff6430b1fff1f82837a29cd"
-  integrity sha512-slmGu3bfdAGDl63dyY9tdVbKJl2Wjuyp1B4kPE+jupZ12YA/EuLR7Ij4ZHnrZjf3DlyoHTsZEf4PdKC0h713YQ==
+"@dendronhq/common-all@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.9.1.tgz#cbdcf8919f448d58e2b748bec3dc104834cffc0b"
+  integrity sha512-/Qotas4kmTM7yC3+4Aa2tf8UyGIf4ax6bsyHqGluuCyL3mhEXVONsmGHsVvFW0EorO1c4vBJzpKFOOVoGWfMkA==
   dependencies:
     dropbox "^4.0.30"
     gray-matter "^4.0.2"
@@ -46,28 +46,28 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/common-server@^0.8.5-alpha.1":
-  version "0.8.5-alpha.1"
-  resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.8.5-alpha.1.tgz#67c45ae38d0c96f0b8bb6f7bd9234663ca58b28b"
-  integrity sha512-VB7bBUWNx6O8w4ylM0gThhiiZGEdUTjwCEIaWRcfuHZhFWhwLUKbfGDzXSg+1fwt5DXo8phuAH/vMaUWbUmP6A==
+"@dendronhq/common-server@^0.9.2-alpha.0":
+  version "0.9.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.9.2-alpha.0.tgz#9cfb5c346e7b523657aa6171697595ce70d5edca"
+  integrity sha512-4p0QLg8W65BLk38xXJ8402CnoFle5TP2tDNA+6pnGgr2bOWubdAnMQmJGDUqXk3qV8JYDIFI0OvyatDAjnNcxw==
   dependencies:
-    "@dendronhq/common-all" "^0.8.2"
+    "@dendronhq/common-all" "^0.9.1"
     fs-extra "^9.0.1"
     gray-matter "^4.0.2"
+    js-yaml "^3.14.0"
     lodash "^4.17.15"
     minimatch "^3.0.4"
     pino "^6.3.2"
     tmp "^0.2.1"
     vscode-uri "^2.1.2"
-    yamljs "^0.3.0"
 
-"@dendronhq/engine-server@0.8.5-alpha.1":
-  version "0.8.5-alpha.1"
-  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.8.5-alpha.1.tgz#9bd7821a88ce9af26b7d39ec92f5c226614d2d12"
-  integrity sha512-Xqn44h+psQk+QqfdsdovWdSZK5zbS1P9vgvTacWlVr50IpIJleEuUDdh2pw/7aJ/n9L4sHs6HY02XdX/o5DL7A==
+"@dendronhq/engine-server@0.9.2-alpha.0":
+  version "0.9.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.9.2-alpha.0.tgz#12381a959e99c929139dddfa58c1b1af305b8d38"
+  integrity sha512-sHzBPoyq8kQKMX1hYPYaiFspXNFqrH+5gRjq8QC7yPyigmPBS1iScGzewJa0Jh8Kuyb8FMN/+95QG+Y73izSlA==
   dependencies:
-    "@dendronhq/common-all" "^0.8.2"
-    "@dendronhq/common-server" "^0.8.5-alpha.1"
+    "@dendronhq/common-all" "^0.9.1"
+    "@dendronhq/common-server" "^0.9.2-alpha.0"
     cross-path-sort "^1.0.0"
     fs-extra "^9.0.1"
     fuse.js "^6.3.0"
@@ -77,6 +77,9 @@
     markdown-it "^11.0.0"
     markdown-it-ast "^0.0.1"
     markdown-it-regex "^0.2.0"
+    mdast-builder "^1.1.1"
+    mdast-util-compact "^2.0.1"
+    mdast-util-inject "^1.1.0"
     remark "^12.0.1"
     remark-frontmatter "^2.0.0"
     remark-parse "^8.0.3"
@@ -89,12 +92,12 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@0.6.3":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.6.3.tgz#8464aaade40aefb93f868041dcfdaa28abcd5408"
-  integrity sha512-WYPgKdUvlR8Vbgj0gLe6voyc7syPAvedgVe9L5Eq5/uiam2ik2euR01TfRi7WDa8wdZ3aWKt+7fFfNv1gTWCLg==
+"@dendronhq/mume@0.9.2-alpha.0":
+  version "0.9.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.2-alpha.0.tgz#6b083ca5dcaf7aac326df3486fe675a04fc255b0"
+  integrity sha512-UsDJOpkskWH7tu9vD04tBRlsnx81fcVVSPI+tbffpNJxBA6O4Ce+CMOJSDoGMx9Hy6R/9gIy2ow+F4/BmgJd3A==
   dependencies:
-    "@dendronhq/engine-server" "0.8.5-alpha.1"
+    "@dendronhq/engine-server" "0.9.2-alpha.0"
     babyparse "^0.4.6"
     cheerio "^1.0.0-rc.3"
     chrome-location "^1.2.1"
@@ -195,7 +198,7 @@
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
   integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
 
-"@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
+"@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
@@ -2125,7 +2128,7 @@ js-yaml@3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.11.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.6.1:
+js-yaml@^3.11.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.14.0, js-yaml@^3.6.1:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
   integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
@@ -2429,12 +2432,31 @@ markdown-table@^2.0.0:
   dependencies:
     repeat-string "^1.0.0"
 
-mdast-util-compact@^2.0.0:
+mdast-builder@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/mdast-builder/-/mdast-builder-1.1.1.tgz#ccaaa5ead8ec9c69883ec87d289770569e4b49b2"
+  integrity sha512-a3KBk/LmYD6wKsWi8WJrGU/rXR4yuF4Men0JO0z6dSZCm5FrXXWTRDjqK0vGSqa+1M6p9edeuypZAZAzSehTUw==
+  dependencies:
+    "@types/unist" "^2.0.3"
+
+mdast-util-compact@^2.0.0, mdast-util-compact@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/mdast-util-compact/-/mdast-util-compact-2.0.1.tgz#cabc69a2f43103628326f35b1acf735d55c99490"
   integrity sha512-7GlnT24gEwDrdAwEHrU4Vv5lLWrEer4KOkAiKT9nYstsTad7Oc1TwqT2zIMKRdZF7cTuaf+GA1E4Kv7jJh8mPA==
   dependencies:
     unist-util-visit "^2.0.0"
+
+mdast-util-inject@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-inject/-/mdast-util-inject-1.1.0.tgz#db06b8b585be959a2dcd2f87f472ba9b756f3675"
+  integrity sha1-2wa4tYW+lZotzS+H9HK6m3VvNnU=
+  dependencies:
+    mdast-util-to-string "^1.0.0"
+
+mdast-util-to-string@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-1.1.0.tgz#27055500103f51637bd07d01da01eb1967a43527"
+  integrity sha512-jVU0Nr2B9X3MU4tSK7JP1CMkSvOj7X5l/GboG1tKRw52lLF1x2Ju92Ms9tNetCcbfX3hzlM73zYo2NKkWSfF/A==
 
 mdurl@^1.0.1:
   version "1.0.1"
