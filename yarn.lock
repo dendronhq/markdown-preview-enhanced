@@ -61,10 +61,10 @@
     tmp "^0.2.1"
     vscode-uri "^2.1.2"
 
-"@dendronhq/engine-server@0.9.7-alpha.0":
-  version "0.9.7-alpha.0"
-  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.9.7-alpha.0.tgz#266a6718c5bcba2cf0f743db9fa631dac64901a7"
-  integrity sha512-usFQ+mKR+jGLFdLzRdhZ3DF0H41gdr/3QEFbDfHmJkRYKpsuwoVC41/Avb8hQA/YkXPzG0LH7NuYuBSdAwwLyQ==
+"@dendronhq/engine-server@0.9.7-alpha.2":
+  version "0.9.7-alpha.2"
+  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.9.7-alpha.2.tgz#ddcfc6a3a4e808c0e2c3e5b97b48a52e6accad2d"
+  integrity sha512-kxT5iX2oBkQm9tdnPuHRG8hlCYMJ+8bKY2HvZ/vNozA9nkf5qP0AuvWsIfda0sgF+w3e6iWoe1wxof9HQCCabA==
   dependencies:
     "@dendronhq/common-all" "^0.9.5"
     "@dendronhq/common-server" "^0.9.6"
@@ -92,12 +92,12 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@^0.9.2":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.2.tgz#56c67a714d6b15e1d3cdf5b35c6bbc4b7848a640"
-  integrity sha512-MsvU0wbIcPE9cKFFcVfLAY0jzo5S8jsXTzkVHci9BEODy4ZAMl47XzCRfA9JrsyeRHEFnc1yy3m+IYgeLtX28Q==
+"@dendronhq/mume@^0.9.4":
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.4.tgz#89b209c7898b8ce633c04773518b1d19abb749d4"
+  integrity sha512-aAifiMjTtO6fWLBwhY1Xf27nWfOlS9Ie8FauYxZi/wqRvGe4LBhnIUW+5ohfxT8Aa/a6CqVaAvMaOzqkce/1aw==
   dependencies:
-    "@dendronhq/engine-server" "0.9.7-alpha.0"
+    "@dendronhq/engine-server" "0.9.7-alpha.2"
     babyparse "^0.4.6"
     cheerio "^1.0.0-rc.3"
     chrome-location "^1.2.1"
