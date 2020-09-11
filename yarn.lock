@@ -92,10 +92,10 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.5.tgz#12ccebd4ad0262b5689f6b04b49b4d7af9405fb4"
-  integrity sha512-BxCA/lDT7251Lg75KOwEWfHrfvxDYD1fOMV4gTrlFnhFx/OLDSosioFEBqOmq9Gi2JSp1OUk1mZ3iif7AWYgwg==
+"@dendronhq/mume@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.6.tgz#894fcb3d1f9fa543d46862873af536dfd349caa4"
+  integrity sha512-QVjIC4gB5fJuXQXqYFbkilK6vHwytIel2sBnvwnz3Bx44xlJ5UYj/bMl7NQ8KpV6f0KmnBM/vArGuEj/8Ti5Ww==
   dependencies:
     "@dendronhq/engine-server" "0.10.5-alpha.1"
     babyparse "^0.4.6"

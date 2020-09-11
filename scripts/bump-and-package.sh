@@ -1,2 +1,2 @@
 npm version patch
-yarn publish
+vsce publish
