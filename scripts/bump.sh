@@ -1,4 +1,2 @@
-$VERSION=$1
-
-npm version $VERSION
+npm version patch
 yarn publish

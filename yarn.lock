@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@dendronhq/common-all@^0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.9.5.tgz#388e8f4c8ea139b9b1a0a6e58dff35b5735410a4"
-  integrity sha512-VrmCagAjGQEKFjGPqiedTkQ7vC4WXEBmB5hb1vt/eEDE3105j5gWPWUVM89S4FI8+kLn4epTczXUl8B1KRVCtg==
+"@dendronhq/common-all@^0.10.4":
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.10.4.tgz#07b91f6d300ea3b9f330de13dac6bc6f980a6ad5"
+  integrity sha512-UkRuFWOL46CAUZE/lggBoabeFYZGvKrwrBAb5pjZdfUrO3Svx6xxugk/fsGn/rmwZRUEXvAOTMinIggdw63x2A==
   dependencies:
     dropbox "^4.0.30"
     gray-matter "^4.0.2"
@@ -46,12 +46,12 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/common-server@^0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.9.6.tgz#45d4744542bdc734d5c0154a2f6c333b19a948cf"
-  integrity sha512-8kWZqkPTSMNS0OUd52x2hd2MTR1X7pJhtFcVniAPlTncWRu+QFpMS9PmSNFbySpKYUoImK6nZPDfEAOJwgi0zA==
+"@dendronhq/common-server@^0.10.5-alpha.0":
+  version "0.10.5-alpha.0"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.10.5-alpha.0.tgz#4d5161324fc4cbb9eee5ad41d3669aef927f6305"
+  integrity sha512-VLq3Cz+b33bLbBYYbdcJaM4/VqTZaoEGHEw/v5Pur/cMiR7C28XuAlLO7lWLbSuMUb98tohky2b+VkxOvKvcTQ==
   dependencies:
-    "@dendronhq/common-all" "^0.9.5"
+    "@dendronhq/common-all" "^0.10.4"
     fs-extra "^9.0.1"
     gray-matter "^4.0.2"
     js-yaml "^3.14.0"
@@ -61,13 +61,13 @@
     tmp "^0.2.1"
     vscode-uri "^2.1.2"
 
-"@dendronhq/engine-server@0.9.7-alpha.2":
-  version "0.9.7-alpha.2"
-  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.9.7-alpha.2.tgz#ddcfc6a3a4e808c0e2c3e5b97b48a52e6accad2d"
-  integrity sha512-kxT5iX2oBkQm9tdnPuHRG8hlCYMJ+8bKY2HvZ/vNozA9nkf5qP0AuvWsIfda0sgF+w3e6iWoe1wxof9HQCCabA==
+"@dendronhq/engine-server@0.10.5-alpha.1":
+  version "0.10.5-alpha.1"
+  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.10.5-alpha.1.tgz#9568f44e013b3e6cec8c92fe8a00c090810f8680"
+  integrity sha512-F9uRVG5OdGSSUgf68nauJR6PuTMSP59itBw2SX31dD2SK54gCKM7aioDWxbTHySUi/h3nMd9E4Y4QvUKBYXQ4w==
   dependencies:
-    "@dendronhq/common-all" "^0.9.5"
-    "@dendronhq/common-server" "^0.9.6"
+    "@dendronhq/common-all" "^0.10.4"
+    "@dendronhq/common-server" "^0.10.5-alpha.0"
     cross-path-sort "^1.0.0"
     fs-extra "^9.0.1"
     fuse.js "^6.3.0"
@@ -92,12 +92,12 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@^0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.4.tgz#89b209c7898b8ce633c04773518b1d19abb749d4"
-  integrity sha512-aAifiMjTtO6fWLBwhY1Xf27nWfOlS9Ie8FauYxZi/wqRvGe4LBhnIUW+5ohfxT8Aa/a6CqVaAvMaOzqkce/1aw==
+"@dendronhq/mume@0.9.5":
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.5.tgz#12ccebd4ad0262b5689f6b04b49b4d7af9405fb4"
+  integrity sha512-BxCA/lDT7251Lg75KOwEWfHrfvxDYD1fOMV4gTrlFnhFx/OLDSosioFEBqOmq9Gi2JSp1OUk1mZ3iif7AWYgwg==
   dependencies:
-    "@dendronhq/engine-server" "0.9.7-alpha.2"
+    "@dendronhq/engine-server" "0.10.5-alpha.1"
     babyparse "^0.4.6"
     cheerio "^1.0.0-rc.3"
     chrome-location "^1.2.1"
