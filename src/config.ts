@@ -46,6 +46,7 @@ export class MarkdownPreviewEnhancedConfig implements MarkdownEngineConfig {
   public readonly puppeteerWaitForTimeout: number;
   public readonly usePuppeteerCore: boolean;
   public readonly puppeteerArgs: string[];
+  public readonly renderRefWithOutline: boolean;
 
   // preview config
   public readonly scrollSync: boolean;
@@ -86,6 +87,7 @@ export class MarkdownPreviewEnhancedConfig implements MarkdownEngineConfig {
     );
     this.codeBlockTheme = config.get<string>("codeBlockTheme");
     this.previewTheme = config.get<string>("previewTheme");
+    this.renderRefWithOutline = config.get<boolean>("renderRefWithOutline");
     this.revealjsTheme = config.get<string>("revealjsTheme");
     this.protocolsWhiteList = config.get<string>("protocolsWhiteList");
     this.imageFolderPath = config.get<string>("imageFolderPath");

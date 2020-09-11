@@ -129,6 +129,11 @@
       "type": "object",
       "title": "Markdown Preview Enhanced",
       "properties": {
+        "markdown-preview-enhanced.renderRefWithOutline": {
+          "description": "Render pretty note refs",
+          "default": true,
+          "type": "boolean"
+        },
         "markdown-preview-enhanced.configPath": {
           "description": "The configuration directory path. Leave it empty to use '~/.mume' as the config path. Please reload vscode to take effect.",
           "default": "",
