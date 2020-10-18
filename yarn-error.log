@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/kevinlin/.nvm/versions/node/v12.14.0/bin/node /Users/kevinlin/.nvm/versions/node/v12.14.0/bin/yarn add --force @dendronhq/mume
+  /Users/kevinlin/.nvm/versions/node/v12.14.0/bin/node /Users/kevinlin/.nvm/versions/node/v12.14.0/bin/yarn add --force @dendronhq/mume@0.12.0
 
 PATH: 
   /Users/kevinlin/.pyenv/plugins/pyenv-virtualenv/shims:/Users/kevinlin/.pyenv/shims:/Users/kevinlin/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/Users/kevinlin/.local/bin:/Users/kevinlin/.rbenv/shims:/Users/kevinlin/.nvm/versions/node/v12.14.0/bin:/Users/kevinlin/Dropbox/code/projects/escher/escherv3/lib/bin:/Users/kevinlin/Dropbox/Code/projects/noah/noah-cli/lib/bin:/Users/kevinlin/Dropbox/asgard/bin:/Users/kevinlin/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/kevinlin/.pyenv/plugins/pyenv-virtualenv/shims:/Users/kevinlin/.pyenv/shims:/Users/kevinlin/.pyenv/bin:/Users/kevinlin/.rbenv/shims:/usr/local/sbin:/Users/kevinlin/.local/bin:/Users/kevinlin/.nvm/versions/node/v12.14.0/bin:/Users/kevinlin/Dropbox/code/projects/escher/escherv3/lib/bin:/Users/kevinlin/Dropbox/Code/projects/noah/noah-cli/lib/bin:/Users/kevinlin/Dropbox/asgard/bin:/Users/kevinlin/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Users/kevinlin/Dropbox/asgard/bin/dev/tasknote:/Users/kevinlin/go/bin:/Users/kevinlin/.fzf/bin:/Library/TeX/texbin:/Users/kevinlin/Dropbox/asgard/bin/dev/tasknote:/Users/kevinlin/go/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.2.tgz: Request failed "404 Not Found"
+  Error: https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.12.0.tgz: Request failed "404 Not Found"
       at ResponseError.ExtendableBuiltin (/Users/kevinlin/.nvm/versions/node/v12.14.0/lib/node_modules/yarn/lib/cli.js:696:66)
       at new ResponseError (/Users/kevinlin/.nvm/versions/node/v12.14.0/lib/node_modules/yarn/lib/cli.js:802:124)
       at Request.<anonymous> (/Users/kevinlin/.nvm/versions/node/v12.14.0/lib/node_modules/yarn/lib/cli.js:67017:16)
@@ -30,7 +30,7 @@ npm manifest:
   {
     "name": "dendron-markdown-preview-enhanced",
     "displayName": "Dendron Markdown Preview Enhanced",
-    "version": "0.9.2",
+    "version": "0.10.1",
     "description": "Markdown Preview Enhanced ported to vscode",
     "categories": [
       "Other"
@@ -158,6 +158,11 @@ npm manifest:
         "type": "object",
         "title": "Markdown Preview Enhanced",
         "properties": {
+          "markdown-preview-enhanced.renderRefWithOutline": {
+            "description": "Render pretty note refs",
+            "default": true,
+            "type": "boolean"
+          },
           "markdown-preview-enhanced.configPath": {
             "description": "The configuration directory path. Leave it empty to use '~/.mume' as the config path. Please reload vscode to take effect.",
             "default": "",
@@ -561,7 +566,7 @@ npm manifest:
       ]
     },
     "dependencies": {
-      "@dendronhq/mume": "0.9.2-alpha.0",
+      "@dendronhq/mume": "0.9.6",
       "@types/vfile": "^3.0.2"
     },
     "devDependencies": {
@@ -621,10 +626,10 @@ Lockfile:
     dependencies:
       regenerator-runtime "^0.13.4"
   
-  "@dendronhq/common-all@^0.9.1":
-    version "0.9.1"
-    resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.9.1.tgz#cbdcf8919f448d58e2b748bec3dc104834cffc0b"
-    integrity sha512-/Qotas4kmTM7yC3+4Aa2tf8UyGIf4ax6bsyHqGluuCyL3mhEXVONsmGHsVvFW0EorO1c4vBJzpKFOOVoGWfMkA==
+  "@dendronhq/common-all@^0.10.4":
+    version "0.10.4"
+    resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.10.4.tgz#07b91f6d300ea3b9f330de13dac6bc6f980a6ad5"
+    integrity sha512-UkRuFWOL46CAUZE/lggBoabeFYZGvKrwrBAb5pjZdfUrO3Svx6xxugk/fsGn/rmwZRUEXvAOTMinIggdw63x2A==
     dependencies:
       dropbox "^4.0.30"
       gray-matter "^4.0.2"
@@ -637,12 +642,12 @@ Lockfile:
       vscode-uri "^2.1.2"
       yamljs "^0.3.0"
   
-  "@dendronhq/common-server@^0.9.2-alpha.0":
-    version "0.9.2-alpha.0"
-    resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.9.2-alpha.0.tgz#9cfb5c346e7b523657aa6171697595ce70d5edca"
-    integrity sha512-4p0QLg8W65BLk38xXJ8402CnoFle5TP2tDNA+6pnGgr2bOWubdAnMQmJGDUqXk3qV8JYDIFI0OvyatDAjnNcxw==
+  "@dendronhq/common-server@^0.10.5-alpha.0":
+    version "0.10.5-alpha.0"
+    resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.10.5-alpha.0.tgz#4d5161324fc4cbb9eee5ad41d3669aef927f6305"
+    integrity sha512-VLq3Cz+b33bLbBYYbdcJaM4/VqTZaoEGHEw/v5Pur/cMiR7C28XuAlLO7lWLbSuMUb98tohky2b+VkxOvKvcTQ==
     dependencies:
-      "@dendronhq/common-all" "^0.9.1"
+      "@dendronhq/common-all" "^0.10.4"
       fs-extra "^9.0.1"
       gray-matter "^4.0.2"
       js-yaml "^3.14.0"
@@ -652,13 +657,13 @@ Lockfile:
       tmp "^0.2.1"
       vscode-uri "^2.1.2"
   
-  "@dendronhq/engine-server@0.9.2-alpha.0":
-    version "0.9.2-alpha.0"
-    resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.9.2-alpha.0.tgz#12381a959e99c929139dddfa58c1b1af305b8d38"
-    integrity sha512-sHzBPoyq8kQKMX1hYPYaiFspXNFqrH+5gRjq8QC7yPyigmPBS1iScGzewJa0Jh8Kuyb8FMN/+95QG+Y73izSlA==
+  "@dendronhq/engine-server@0.10.5-alpha.1":
+    version "0.10.5-alpha.1"
+    resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.10.5-alpha.1.tgz#9568f44e013b3e6cec8c92fe8a00c090810f8680"
+    integrity sha512-F9uRVG5OdGSSUgf68nauJR6PuTMSP59itBw2SX31dD2SK54gCKM7aioDWxbTHySUi/h3nMd9E4Y4QvUKBYXQ4w==
     dependencies:
-      "@dendronhq/common-all" "^0.9.1"
-      "@dendronhq/common-server" "^0.9.2-alpha.0"
+      "@dendronhq/common-all" "^0.10.4"
+      "@dendronhq/common-server" "^0.10.5-alpha.0"
       cross-path-sort "^1.0.0"
       fs-extra "^9.0.1"
       fuse.js "^6.3.0"
@@ -683,12 +688,12 @@ Lockfile:
       vscode-uri "^2.1.2"
       yamljs "^0.3.0"
   
-  "@dendronhq/mume@0.9.2-alpha.0":
-    version "0.9.2-alpha.0"
-    resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.2-alpha.0.tgz#6b083ca5dcaf7aac326df3486fe675a04fc255b0"
-    integrity sha512-UsDJOpkskWH7tu9vD04tBRlsnx81fcVVSPI+tbffpNJxBA6O4Ce+CMOJSDoGMx9Hy6R/9gIy2ow+F4/BmgJd3A==
+  "@dendronhq/mume@0.9.6":
+    version "0.9.6"
+    resolved "https://registry.yarnpkg.com/@dendronhq/mume/-/mume-0.9.6.tgz#894fcb3d1f9fa543d46862873af536dfd349caa4"
+    integrity sha512-QVjIC4gB5fJuXQXqYFbkilK6vHwytIel2sBnvwnz3Bx44xlJ5UYj/bMl7NQ8KpV6f0KmnBM/vArGuEj/8Ti5Ww==
     dependencies:
-      "@dendronhq/engine-server" "0.9.2-alpha.0"
+      "@dendronhq/engine-server" "0.10.5-alpha.1"
       babyparse "^0.4.6"
       cheerio "^1.0.0-rc.3"
       chrome-location "^1.2.1"

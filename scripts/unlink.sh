@@ -1,4 +1,4 @@
-VERSION=$1
+VERSION=0.12.0
 
 yarn unlink @dendronhq/mume
 echo "installing $VERSION"

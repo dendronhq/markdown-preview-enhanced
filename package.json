@@ -537,7 +537,7 @@
     ]
   },
   "dependencies": {
-    "@dendronhq/mume": "0.9.6",
+    "@dendronhq/mume": "0.12.0",
     "@types/vfile": "^3.0.2"
   },
   "devDependencies": {
