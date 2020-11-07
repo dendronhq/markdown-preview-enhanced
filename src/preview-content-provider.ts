@@ -1,3 +1,5 @@
+// import * as Baby from "babyparse"
+import { getEngine } from "@dendronhq/engine-server";
 import * as mume from "@dendronhq/mume";
 import { MarkdownEngine } from "@dendronhq/mume";
 import { useExternalAddFileProtocolFunction } from "@dendronhq/mume/out/src/utility";
@@ -6,7 +8,9 @@ import { tmpdir } from "os";
 import * as path from "path";
 import * as vscode from "vscode";
 import { TextEditor, Uri } from "vscode";
+import { DEngineClientV2 } from "../../dendron/packages/common-server/node_modules/@dendronhq/common-all/lib";
 import { MarkdownPreviewEnhancedConfig } from "./config";
+import _ = require("lodash");
 
 // http://www.typescriptlang.org/play/
 // https://github.com/Microsoft/vscode/blob/master/extensions/markdown/media/main.js
@@ -333,7 +337,13 @@ export class MarkdownPreviewEnhancedView {
   /**
    * Initialize MarkdownEngine for this markdown file
    */
-  public initMarkdownEngine(sourceUri: Uri): MarkdownEngine {
+  public initMarkdownEngine({
+    sourceUri,
+    dendronEngine,
+  }: {
+    sourceUri: Uri;
+    dendronEngine: DEngineClientV2;
+  }): MarkdownEngine {
     let engine = this.getEngine(sourceUri);
     if (!engine) {
       engine = new MarkdownEngine({
@@ -343,6 +353,7 @@ export class MarkdownPreviewEnhancedView {
           vscode.workspace.workspaceFolders,
         ),
         config: this.config,
+        engine: dendronEngine,
       });
       this.engineMaps[sourceUri.fsPath] = engine;
       this.jsAndCssFilesMaps[sourceUri.fsPath] = [];
@@ -453,8 +464,26 @@ export class MarkdownPreviewEnhancedView {
 
     const text = editor.document.getText();
     let engine = this.getEngine(sourceUri);
+
+    // DENDRON:START
+    const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
+    const vaults = vscode.workspace.workspaceFolders.map((ent) => ({
+      fsPath: ent.uri.fsPath,
+    }));
+    let dendronEngine: DEngineClientV2;
+    console.log("loading engine...");
+    const { error, data } = await getEngine({ wsRoot, vaults });
+    console.log("done loading...", error);
+    if (_.isUndefined(error)) {
+      console.log("load new engine");
+      dendronEngine = data;
+      await dendronEngine.sync();
+    } else {
+      console.log("load old engine");
+      dendronEngine = { vaults } as any;
+    }
     if (!engine) {
-      engine = this.initMarkdownEngine(sourceUri);
+      engine = this.initMarkdownEngine({ sourceUri, dendronEngine });
     }
 
     engine
