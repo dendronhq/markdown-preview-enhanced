@@ -60,12 +60,69 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
+"@dendronhq/common-all@^0.14.2-alpha.2":
+  version "0.14.2-alpha.2"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-all/-/common-all-0.14.2-alpha.2.tgz#1e1c548910a2f72bdde27314908724a899a25cf3"
+  integrity sha512-mHyudS6453WgOhms/zw1HHl9bK8ZvA1xi0k/U1X2pUfzpabteaNljg7DKOGjWWzgg7f3OI5hhtyxx3HGCZGEYA==
+  dependencies:
+    "@types/jest" "^23.3.3"
+    "@types/lodash" "^4.14.152"
+    "@types/luxon" "^1.25.0"
+    "@types/minimatch" "^3.0.3"
+    "@types/moment" "^2.13.0"
+    "@types/node" "13.11.0"
+    "@types/pino" "^6.0.1"
+    "@types/semver" "^7.3.4"
+    "@types/unist" "^2.0.3"
+    "@types/uuid" "^8.0.0"
+    "@types/yamljs" "^0.2.31"
+    dropbox "^4.0.30"
+    gray-matter "^4.0.2"
+    isomorphic-fetch "^2.2.1"
+    js-yaml "^3.14.0"
+    lodash "^4.17.15"
+    luxon "^1.25.0"
+    minimatch "^3.0.4"
+    moment "^2.27.0"
+    pino "^6.3.1"
+    request "^2.88.2"
+    request-promise "^4.2.6"
+    semver "^7.3.2"
+    uuid "^8.1.0"
+    vscode-uri "^2.1.2"
+    yamljs "^0.3.0"
+
 "@dendronhq/common-server@^0.14.2-alpha.0":
   version "0.14.2-alpha.0"
   resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.14.2-alpha.0.tgz#25cdccc66b2bd238b027c7b001bdca35bb51860c"
   integrity sha512-qaqt5Ej9hdz1HkNT0b2P288+gePn5PGUq0Iyxm/9WtSfNf070POXYZ9u4bxJg1dOhPCvKJstLlMDpJGPV0ADgQ==
   dependencies:
     "@dendronhq/common-all" "^0.14.2-alpha.0"
+    "@types/fs-extra" "^9.0.1"
+    "@types/jest" "^23.3.3"
+    "@types/js-yaml" "^3.12.5"
+    "@types/lodash" "^4.14.154"
+    "@types/minimatch" "^3.0.3"
+    "@types/node" "13.11.0"
+    "@types/pino" "^6.3.0"
+    "@types/tmp" "^0.2.0"
+    comment-json "^4.1.0"
+    fs-extra "^9.0.1"
+    gray-matter "^4.0.2"
+    js-yaml "^3.14.0"
+    lodash "^4.17.15"
+    minimatch "^3.0.4"
+    pino "^6.3.2"
+    request-promise "^4.2.6"
+    tmp "^0.2.1"
+    vscode-uri "^2.1.2"
+
+"@dendronhq/common-server@^0.14.2-alpha.2":
+  version "0.14.2-alpha.2"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-server/-/common-server-0.14.2-alpha.2.tgz#a92f9b3a27c6a1268e025df3f76f9f7694db3a56"
+  integrity sha512-eoVFZMWLDffsXOYkXfhcE0f+7FQ/Iw1dIyWHbfVhXoC4VZNugTdpzLzwBMJqsfueY5LBTNjX8J2XmKY3zJ8VOg==
+  dependencies:
+    "@dendronhq/common-all" "^0.14.2-alpha.2"
     "@types/fs-extra" "^9.0.1"
     "@types/jest" "^23.3.3"
     "@types/js-yaml" "^3.12.5"
@@ -95,6 +152,16 @@
     fs-extra "^9.0.1"
     lodash "^4.17.20"
 
+"@dendronhq/common-test-utils@^0.14.2-alpha.2":
+  version "0.14.2-alpha.2"
+  resolved "https://registry.yarnpkg.com/@dendronhq/common-test-utils/-/common-test-utils-0.14.2-alpha.2.tgz#846e5e4b7864e3367a7da22d80d347394084c608"
+  integrity sha512-PEmJCC8qpk6JXTIlOc8fv9PRKttI8wIlDF9Z0BaPnPC0sQIBEcGPFUJI8Er6Jr7yuDfmqcyo/U6t9KTdETgjrA==
+  dependencies:
+    "@dendronhq/common-all" "^0.14.2-alpha.2"
+    "@dendronhq/common-server" "^0.14.2-alpha.2"
+    fs-extra "^9.0.1"
+    lodash "^4.17.20"
+
 "@dendronhq/engine-server@0.14.2-alpha.1":
   version "0.14.2-alpha.1"
   resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.14.2-alpha.1.tgz#e76ddb9d8452d7777a9eccef2527c6175e7c753c"
@@ -103,6 +170,54 @@
     "@dendronhq/common-all" "^0.14.2-alpha.0"
     "@dendronhq/common-server" "^0.14.2-alpha.0"
     "@dendronhq/common-test-utils" "^0.14.2-alpha.0"
+    "@types/fs-extra" "^9.0.1"
+    "@types/jest" "^23.3.3"
+    "@types/klaw" "^3.0.1"
+    "@types/lodash" "^4.14.156"
+    "@types/markdown-it" "^10.0.2"
+    "@types/mdast" "^3.0.3"
+    "@types/node" "13.11.0"
+    "@types/pino" "^6.3.0"
+    "@types/remark-abbr" "^1.4.0"
+    "@types/through2" "^2.0.36"
+    "@types/unist" "^2.0.3"
+    "@types/yamljs" "^0.2.31"
+    cross-path-sort "^1.0.0"
+    execa "^4.0.3"
+    fs-extra "^9.0.1"
+    fuse.js "^6.3.0"
+    gray-matter "^4.0.2"
+    klaw "^3.0.0"
+    lodash "^4.17.15"
+    markdown-it "^11.0.0"
+    markdown-it-ast "^0.0.1"
+    markdown-it-regex "^0.2.0"
+    mdast-builder "^1.1.1"
+    mdast-util-compact "^2.0.1"
+    mdast-util-inject "^1.1.0"
+    remark "^12.0.1"
+    remark-abbr "^1.4.0"
+    remark-frontmatter "^2.0.0"
+    remark-parse "^8.0.3"
+    remark-toc "^7.0.0"
+    remark-wiki-link "^0.0.4"
+    stream "^0.0.2"
+    through2 "^4.0.2"
+    unified "^9.1.0"
+    unified-engine "^8.0.0"
+    unist-util-select "^3.0.1"
+    unist-util-visit "^2.0.3"
+    vscode-uri "^2.1.2"
+    yamljs "^0.3.0"
+
+"@dendronhq/engine-server@0.14.2-alpha.2":
+  version "0.14.2-alpha.2"
+  resolved "https://registry.yarnpkg.com/@dendronhq/engine-server/-/engine-server-0.14.2-alpha.2.tgz#e0429fa1ab7e28a51e673df1ee4d2b6e5da27b8e"
+  integrity sha512-6AWG/1CAgXD27q/Dy3CR392rLL/pBGt/uAchG9b8cnOBf8LM0k5MDPPMpu8A5Dt0HkebBCY4J+yw40lQLqM0VQ==
+  dependencies:
+    "@dendronhq/common-all" "^0.14.2-alpha.2"
+    "@dendronhq/common-server" "^0.14.2-alpha.2"
+    "@dendronhq/common-test-utils" "^0.14.2-alpha.2"
     "@types/fs-extra" "^9.0.1"
     "@types/jest" "^23.3.3"
     "@types/klaw" "^3.0.1"
@@ -338,6 +453,11 @@
   dependencies:
     remark "^12.0.0"
     unified "^9.2.0"
+
+"@types/semver@^7.3.4":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.4.tgz#43d7168fec6fa0988bb1a513a697b29296721afb"
+  integrity sha512-+nVsLKlcUCeMzD2ufHEYuJ9a2ovstb6Dp52A5VsoKxDXgvE051XgHI/33I1EymwkRGQkwnA0LkhnUzituGs4EQ==
 
 "@types/sizzle@*":
   version "2.3.2"
@@ -3707,6 +3827,11 @@ semver-compare@^1.0.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
+
+semver@^7.3.2:
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
+  integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
 set-blocking@^2.0.0:
   version "2.0.0"
