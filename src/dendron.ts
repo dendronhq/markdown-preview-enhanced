@@ -16,6 +16,13 @@ export class DendronWorkspace {
     return { justInitialized, ws: this._EngineWrapper };
   }
 
+  async getOrCreateEngine() {
+    if (!this.engine) {
+      this.engine = await this.getEngine();
+    }
+    return this.engine;
+  }
+
   async getEngine() {
     // DENDRON:START
     const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);

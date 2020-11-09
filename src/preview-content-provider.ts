@@ -468,9 +468,9 @@ export class MarkdownPreviewEnhancedView {
     let dendronEngine: DEngineClientV2;
     // const version = WorkspaceService.getVersion({wsRoot})
     const { ws, justInitialized } = DendronWorkspace.getOrCreate();
-    dendronEngine = await ws.getEngine();
+    dendronEngine = await ws.getOrCreateEngine();
     if (justInitialized) {
-      dendronEngine.sync();
+      await dendronEngine.sync();
     }
     if (!engine) {
       engine = this.initMarkdownEngine({ sourceUri, dendronEngine });
