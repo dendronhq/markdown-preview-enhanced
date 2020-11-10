@@ -11,12 +11,28 @@ import {
   isMarkdownFile,
   MarkdownPreviewEnhancedView,
 } from "./preview-content-provider";
+import { EngineConnector } from "@dendronhq/engine-server";
 
 let editorScrollDelay = Date.now();
+
+async function setupDendron(context: vscode.ExtensionContext) {
+  const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
+  const vaults = vscode.workspace.workspaceFolders.map((v) => ({
+    fsPath: v.uri.fsPath,
+  }));
+  const connector = new EngineConnector({ wsRoot, vaults });
+  await connector.init({
+    onReady: async () => {
+      console.log("ready");
+    },
+  });
+}
 
 // this method is called when your extension iopenTextDocuments activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  setupDendron(context);
+  // DendronWorkspace.createServerPortWatcher()
   // assume only one preview supported.
   const contentProvider = new MarkdownPreviewEnhancedView(context);
 

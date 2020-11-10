@@ -1,5 +1,9 @@
 // import * as Baby from "babyparse"
-import { DEngineClientV2 } from "@dendronhq/engine-server";
+import {
+  DEngineClientV2,
+  EngineConnector,
+  getWSMetaFilePath,
+} from "@dendronhq/engine-server";
 import * as mume from "@dendronhq/mume";
 import { MarkdownEngine } from "@dendronhq/mume";
 import { useExternalAddFileProtocolFunction } from "@dendronhq/mume/out/src/utility";
@@ -9,7 +13,7 @@ import * as path from "path";
 import * as vscode from "vscode";
 import { TextEditor, Uri } from "vscode";
 import { MarkdownPreviewEnhancedConfig } from "./config";
-import { DendronWorkspace } from "./dendron";
+import _ = require("lodash");
 
 // http://www.typescriptlang.org/play/
 // https://github.com/Microsoft/vscode/blob/master/extensions/markdown/media/main.js
@@ -466,11 +470,23 @@ export class MarkdownPreviewEnhancedView {
 
     // DENDRON:START
     let dendronEngine: DEngineClientV2;
-    // const version = WorkspaceService.getVersion({wsRoot})
-    const { ws, justInitialized } = DendronWorkspace.getOrCreate();
-    dendronEngine = await ws.getOrCreateEngine();
-    if (justInitialized) {
-      await dendronEngine.sync();
+
+    // check if we are on old engine
+    const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
+    const fpath = getWSMetaFilePath({ wsRoot });
+    if (!fs.existsSync(fpath)) {
+      const vaults = vscode.workspace.workspaceFolders.map((v) => ({
+        fsPath: v.uri.fsPath,
+      }));
+      dendronEngine = { vaults: [vaults[0].fsPath] } as any;
+    } else {
+      const connector = EngineConnector.instance();
+      if (_.isUndefined(connector._engine)) {
+        return vscode.window.showInformationMessage(
+          "still connecting to engine...",
+        );
+      }
+      dendronEngine = connector.engine;
     }
     if (!engine) {
       engine = this.initMarkdownEngine({ sourceUri, dendronEngine });
