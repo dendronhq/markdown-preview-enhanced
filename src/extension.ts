@@ -2,6 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as path from "path";
 import * as vscode from "vscode";
+import * as fs from "fs";
 
 import { getExtensionConfigPath, utility } from "@dendronhq/mume";
 
@@ -11,7 +12,7 @@ import {
   isMarkdownFile,
   MarkdownPreviewEnhancedView,
 } from "./preview-content-provider";
-import { EngineConnector } from "@dendronhq/engine-server";
+import { EngineConnector, getWSMetaFilePath } from "@dendronhq/engine-server";
 
 let editorScrollDelay = Date.now();
 
@@ -20,12 +21,15 @@ async function setupDendron(context: vscode.ExtensionContext) {
   const vaults = vscode.workspace.workspaceFolders.map((v) => ({
     fsPath: v.uri.fsPath,
   }));
-  const connector = new EngineConnector({ wsRoot, vaults });
-  await connector.init({
-    onReady: async () => {
-      console.log("ready");
-    },
-  });
+  const fpath = getWSMetaFilePath({ wsRoot });
+  if (fs.existsSync(fpath)) {
+    const connector = new EngineConnector({ wsRoot, vaults });
+    await connector.init({
+      onReady: async () => {
+        console.log("ready");
+      },
+    });
+  }
 }
 
 // this method is called when your extension iopenTextDocuments activated
