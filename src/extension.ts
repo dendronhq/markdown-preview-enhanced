@@ -27,6 +27,9 @@ async function setupDendron(context: vscode.ExtensionContext) {
     await connector.init({
       onReady: async () => {
         console.log("ready");
+        setInterval(async () => {
+          connector.engine.sync();
+        }, 5000);
       },
     });
   }
