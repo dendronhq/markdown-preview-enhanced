@@ -1,37 +1,25 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
+import { EngineConnector, getWSMetaFilePath } from "@dendronhq/engine-server";
+import { getExtensionConfigPath, utility } from "@dendronhq/mume";
+import * as fs from "fs";
 import * as path from "path";
 import * as vscode from "vscode";
-import * as fs from "fs";
-
-import { getExtensionConfigPath, utility } from "@dendronhq/mume";
-
 import { pasteImageFile, uploadImageFile } from "./image-helper";
 import {
   getPreviewUri,
   isMarkdownFile,
   MarkdownPreviewEnhancedView,
 } from "./preview-content-provider";
-import { EngineConnector, getWSMetaFilePath } from "@dendronhq/engine-server";
 
 let editorScrollDelay = Date.now();
 
 async function setupDendron(context: vscode.ExtensionContext) {
   const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
-  const vaults = vscode.workspace.workspaceFolders.map((v) => ({
-    fsPath: v.uri.fsPath,
-  }));
   const fpath = getWSMetaFilePath({ wsRoot });
   if (fs.existsSync(fpath)) {
-    const connector = new EngineConnector({ wsRoot, vaults });
-    await connector.init({
-      onReady: async () => {
-        console.log("ready");
-        setInterval(async () => {
-          connector.engine.sync();
-        }, 5000);
-      },
-    });
+    const connector = new EngineConnector({ wsRoot });
+    await connector.init({});
   }
 }
 

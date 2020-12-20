@@ -1,9 +1,5 @@
 // import * as Baby from "babyparse"
-import {
-  DEngineClientV2,
-  EngineConnector,
-  getWSMetaFilePath,
-} from "@dendronhq/engine-server";
+import { DEngineClientV2, EngineConnector } from "@dendronhq/engine-server";
 import * as mume from "@dendronhq/mume";
 import { MarkdownEngine } from "@dendronhq/mume";
 import { useExternalAddFileProtocolFunction } from "@dendronhq/mume/out/src/utility";
@@ -470,24 +466,13 @@ export class MarkdownPreviewEnhancedView {
 
     // DENDRON:START
     let dendronEngine: DEngineClientV2;
-
-    // check if we are on old engine
-    const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
-    const fpath = getWSMetaFilePath({ wsRoot });
-    if (!fs.existsSync(fpath)) {
-      const vaults = vscode.workspace.workspaceFolders.map((v) => ({
-        fsPath: v.uri.fsPath,
-      }));
-      dendronEngine = { vaults: [vaults[0].fsPath] } as any;
-    } else {
-      const connector = EngineConnector.instance();
-      if (_.isUndefined(connector._engine)) {
-        return vscode.window.showInformationMessage(
-          "still connecting to engine...",
-        );
-      }
-      dendronEngine = connector.engine;
+    const connector = EngineConnector.instance();
+    if (_.isUndefined(connector._engine)) {
+      return vscode.window.showInformationMessage(
+        "Still initializing. Please close this window and try again after Dendron has been initialized",
+      );
     }
+    dendronEngine = connector.engine;
     if (!engine) {
       engine = this.initMarkdownEngine({ sourceUri, dendronEngine });
     }
@@ -505,6 +490,10 @@ export class MarkdownPreviewEnhancedView {
       })
       .then((html) => {
         previewPanel.webview.html = html;
+      })
+      .then(() => {
+        // sync everytime we generate a new template
+        dendronEngine.sync();
       });
   }
 
