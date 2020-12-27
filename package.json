@@ -538,7 +538,7 @@
   },
   "dependencies": {
     "@dendronhq/engine-server": "0.21.1-alpha.7",
-    "@dendronhq/mume": "0.13.2",
+    "@dendronhq/mume": "0.13.3",
     "@types/vfile": "^3.0.2"
   },
   "devDependencies": {
