@@ -1,5 +1,5 @@
-VERSION_MUME=0.13.2
-VERSION_SERVER="0.20.1-alpha.11"
+VERSION_MUME=0.13.3
+VERSION_SERVER="0.21.1-alpha.7"
 
 yarn unlink @dendronhq/mume
 yarn unlink @dendronhq/engine-server
