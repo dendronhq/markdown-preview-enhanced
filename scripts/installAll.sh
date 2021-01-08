@@ -6,3 +6,6 @@ git commit -m "update dependencies"
 ./scripts/bump.sh
 
 cd dendron-markdown-preview-enhanced
+./scripts/unlink.sh
+./scripts/bump-and-package.sh
+./scripts/install.sh
