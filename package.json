@@ -537,8 +537,8 @@
     ]
   },
   "dependencies": {
-    "@dendronhq/engine-server": "0.23.1-alpha.1",
-    "@dendronhq/mume": "^0.13.6",
+    "@dendronhq/engine-server": "0.23.2-alpha.4",
+    "@dendronhq/mume": "0.13.7",
     "@types/vfile": "^3.0.2"
   },
   "devDependencies": {
@@ -557,7 +557,9 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.0.3"
   },
-  "extensionDependencies": [],
+  "extensionDependencies": [
+    "dendron.dendron"
+  ],
   "engines": {
     "vscode": "^1.40.0"
   }
