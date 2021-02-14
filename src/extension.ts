@@ -6,6 +6,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as vscode from "vscode";
 import { pasteImageFile, uploadImageFile } from "./image-helper";
+import { Logger } from "./logger";
 import {
   getPreviewUri,
   isMarkdownFile,
@@ -19,13 +20,19 @@ async function setupDendron(context: vscode.ExtensionContext) {
   const fpath = getWSMetaFilePath({ wsRoot });
   if (fs.existsSync(fpath)) {
     const connector = new EngineConnector({ wsRoot });
-    await connector.init({});
+    await connector.init({
+      onReady: async ({ ws }) => {
+        Logger.info("finish connecting, port: " + ws.port);
+      },
+    });
   }
 }
 
 // this method is called when your extension iopenTextDocuments activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  Logger.configure(context, "info");
+  Logger.info("connecting to dendron...");
   setupDendron(context);
   // DendronWorkspace.createServerPortWatcher()
   // assume only one preview supported.

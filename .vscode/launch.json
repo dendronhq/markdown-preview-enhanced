@@ -14,7 +14,11 @@
         "--extensionDevelopmentPath=${workspaceFolder}" 
       ],
       "outFiles": ["${workspaceFolder}/out/**/*.js"],
-      "preLaunchTask": "npm: watch"
+      "preLaunchTask": "npm: watch",
+      "env": {
+        "LOG_LEVEL": "info",
+        "LOG_DEST": "/tmp/out.txt"
+      }
     },
     {
       "name": "Extension Tests",
