@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@dendronhq/common-all@0.30.0", "@dendronhq/common-all@^0.30.0":
-  version "0.30.0"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-all/-/common-all-0.30.0.tgz#461f36c69f7c2787bf64a71d15faa1230b840b64"
-  integrity sha512-r+qA0aZzSriWbZ6AWjpaNpoBITZGcOjL0sTAo3FEpcnWd0wm7tPxiNkj13Uf9cpnYyinRUjKVKaZukWhb52qeQ==
+"@dendronhq/common-all@0.30.2-alpha.0", "@dendronhq/common-all@^0.30.2-alpha.0":
+  version "0.30.2-alpha.0"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-all/-/common-all-0.30.2-alpha.0.tgz#7a5865f2a2a03e379a598d2b2c7eae78e2a5c36c"
+  integrity sha512-aIoxsFxvvrf+FZOD8aGexQ5PBNMaIuRSVn+zDMdvi9LhZp1gTlIRu7YdfM6tQLj7b8rCwSQCqQL+q7DbRd3VNg==
   dependencies:
     "@types/github-slugger" "^1.3.0"
     "@types/lodash" "^4.14.152"
@@ -61,12 +61,12 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/common-server@^0.30.0":
-  version "0.30.0"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-server/-/common-server-0.30.0.tgz#9ff79f91e19c9e054d02801a38fdc7fd4f4f5202"
-  integrity sha512-HP28kVm/c644IH9Dn7jEJL/GnqstIZVlX1X3TFODqade0djEnjm9wUBUIOWYEHpHL6V18LO8U2O7Eg+EQtb0fQ==
+"@dendronhq/common-server@^0.30.2-alpha.0":
+  version "0.30.2-alpha.0"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-server/-/common-server-0.30.2-alpha.0.tgz#1e61dbb40e4047c71b0f2c82872a12134bf0dcec"
+  integrity sha512-V6q08J6/RPW7crwRcbzcbqxsgDozc06dI17rVYlvP4fmMvSkyX8VFd2zBr3G4DYModGRVWYVBLqLJE4BDNDH3A==
   dependencies:
-    "@dendronhq/common-all" "^0.30.0"
+    "@dendronhq/common-all" "^0.30.2-alpha.0"
     "@types/analytics-node" "^3.1.4"
     "@types/fs-extra" "^9.0.1"
     "@types/js-yaml" "^3.12.5"
@@ -89,26 +89,26 @@
     tmp "^0.2.1"
     vscode-uri "^2.1.2"
 
-"@dendronhq/common-test-utils@0.30.0", "@dendronhq/common-test-utils@^0.30.0":
-  version "0.30.0"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-test-utils/-/common-test-utils-0.30.0.tgz#05d5f5ff747c834a3d8d3202026475aeabdd8778"
-  integrity sha512-uvpdqRHWdBkudtaC1C3gBNWaXmaculv9RWbHjfwTIe4/+JKgihkweIhUpWtQxLf7TERHRq35pfB2+Hkp6AfntQ==
+"@dendronhq/common-test-utils@0.30.2-alpha.0", "@dendronhq/common-test-utils@^0.30.2-alpha.0":
+  version "0.30.2-alpha.0"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-test-utils/-/common-test-utils-0.30.2-alpha.0.tgz#9c80461cc5b293c0e446f7fda298e96f6838e926"
+  integrity sha512-jzwZZFQQqjP6UubTvm+1LYlNu5Fojk7HUNoi6iNJEAXBvbyjDsuJOHpP7qYAfGCL7wF53Y9IAYb4nmTbgEMslA==
   dependencies:
-    "@dendronhq/common-all" "^0.30.0"
-    "@dendronhq/common-server" "^0.30.0"
+    "@dendronhq/common-all" "^0.30.2-alpha.0"
+    "@dendronhq/common-server" "^0.30.2-alpha.0"
     "@types/sinon" "^9.0.9"
     fs-extra "^9.0.1"
     lodash "^4.17.20"
     sinon "^9.2.1"
 
-"@dendronhq/engine-server@0.30.0":
-  version "0.30.0"
-  resolved "http://localhost:4873/@dendronhq%2fengine-server/-/engine-server-0.30.0.tgz#eb45a49ca7e8d61044faad288c7c9975020cb287"
-  integrity sha512-wRLReuUR/5aSJs8h/gY3oi0hYEcEPEu9DJ/7mujaEDAmjemuvCHbUaIEN+8pR/UVIIIgvj2nanpYPbqXjPsZDQ==
+"@dendronhq/engine-server@0.30.2-alpha.0":
+  version "0.30.2-alpha.0"
+  resolved "http://localhost:4873/@dendronhq%2fengine-server/-/engine-server-0.30.2-alpha.0.tgz#67b0f320bc995af9adc6fd9ed078a7c823b67a3c"
+  integrity sha512-z8/R8S9QoSGAlKhw9nFx8/CRJV5lH4prSxzCWX5Cjw97/3xu3z1b3bbBDlwQSf5PbKecKtdBpo8jgHZUijU6gg==
   dependencies:
-    "@dendronhq/common-all" "^0.30.0"
-    "@dendronhq/common-server" "^0.30.0"
-    "@dendronhq/common-test-utils" "^0.30.0"
+    "@dendronhq/common-all" "^0.30.2-alpha.0"
+    "@dendronhq/common-server" "^0.30.2-alpha.0"
+    "@dendronhq/common-test-utils" "^0.30.2-alpha.0"
     "@dendronhq/remark-mermaid" "^0.2.0"
     "@mapbox/rehype-prism" "^0.5.0"
     "@types/fs-extra" "^9.0.1"
@@ -158,14 +158,14 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@0.13.12":
-  version "0.13.12"
-  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.12.tgz#008a61dac5e3704f57b12d409a67d551cdfcaf1b"
-  integrity sha512-XvTGtfIt0xfX+unBtCslrDGA9pDUP8DvUTBoEVeK8DCJ3X9Q86uCd7TyJVWjrY6/GdKWAk7TruZLMJD7kReI0w==
+"@dendronhq/mume@0.13.13":
+  version "0.13.13"
+  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.13.tgz#3279f89f8c53d58fb963df7f2dba7b0b26330c4d"
+  integrity sha512-ha6yVQvOWDPBD5WVuETNdilBDW9Cx8mPsDHOPPo+bP44+zVt//V8pdwwBFsKQnxI2j7Y7BrjbvQD2Gt4kCa4cA==
   dependencies:
-    "@dendronhq/common-all" "0.30.0"
-    "@dendronhq/common-test-utils" "0.30.0"
-    "@dendronhq/engine-server" "0.30.0"
+    "@dendronhq/common-all" "0.30.2-alpha.0"
+    "@dendronhq/common-test-utils" "0.30.2-alpha.0"
+    "@dendronhq/engine-server" "0.30.2-alpha.0"
     babyparse "^0.4.6"
     cheerio "^1.0.0-rc.3"
     chrome-location "^1.2.1"
