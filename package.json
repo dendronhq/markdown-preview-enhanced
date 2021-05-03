@@ -1,7 +1,7 @@
 {
   "name": "dendron-markdown-preview-enhanced",
   "displayName": "Dendron Markdown Preview Enhanced",
-  "version": "0.10.30",
+  "version": "0.10.31",
   "description": "Markdown Preview Enhanced ported to vscode",
   "categories": [
     "Other"
