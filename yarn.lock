@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@dendronhq/common-all@0.32.7-alpha.0", "@dendronhq/common-all@^0.32.7-alpha.0":
-  version "0.32.7-alpha.0"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-all/-/common-all-0.32.7-alpha.0.tgz#1f175808fde66ca77b5a790f3e8c762ac12bd869"
-  integrity sha512-W1ysRLpYDBRzi0nSZMF/iwajcdP64hz83COuA12//DakwZ4soUUrQUJeILqge3oDGGGcRdKG015sZ80qI5yglw==
+"@dendronhq/common-all@0.40.0", "@dendronhq/common-all@^0.40.0":
+  version "0.40.0"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-all/-/common-all-0.40.0.tgz#19d48a9bb77ec7e202b95641370f2b3414a86f92"
+  integrity sha512-qXwJLodyOwf2QvyMq4pAkRgj6G7LHSBeaqF1mXB3RLANmm+emdJpvOYehUE1S0RkLkBmcc6opoo8/ibzCMlILw==
   dependencies:
     "@types/github-slugger" "^1.3.0"
     "@types/lodash" "^4.14.152"
@@ -61,12 +61,12 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/common-server@^0.33.5-alpha.0":
-  version "0.33.5-alpha.0"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-server/-/common-server-0.33.5-alpha.0.tgz#e171d32a19212605f5521f0a21c08b86ee08df2d"
-  integrity sha512-9ToqHZhNCuWmBTPZA57p3AaVfHjKtqMCW8NuHj0bieMf3Q0cNmhN8Y+NhTex2jn21lOzLCgtbzCV/gSUYo8kKA==
+"@dendronhq/common-server@^0.40.0":
+  version "0.40.0"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-server/-/common-server-0.40.0.tgz#5b3a7701ed5501b9de562f1632ae36f12ac25792"
+  integrity sha512-sBMZtqr3UMUtiAxIHGIpvj2/efEBUzDNreIh3lnbQakx6Tca+fjlRPYBXiQmmTGYTiXOiyAuI8WsmrmqrKEFSw==
   dependencies:
-    "@dendronhq/common-all" "^0.32.7-alpha.0"
+    "@dendronhq/common-all" "^0.40.0"
     "@types/analytics-node" "^3.1.4"
     "@types/execa" "^2.0.0"
     "@types/fs-extra" "^9.0.1"
@@ -75,6 +75,7 @@
     "@types/minimatch" "^3.0.3"
     "@types/node" "13.11.0"
     "@types/pino" "^6.3.0"
+    "@types/spark-md5" "^3.0.2"
     "@types/tmp" "^0.2.0"
     analytics-node "^4.0.0"
     comment-json "^4.1.0"
@@ -91,26 +92,26 @@
     tmp "^0.2.1"
     vscode-uri "^2.1.2"
 
-"@dendronhq/common-test-utils@0.33.5-alpha.0":
-  version "0.33.5-alpha.0"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-test-utils/-/common-test-utils-0.33.5-alpha.0.tgz#9ac214102aeb2ba5c6cd2d1f1f356c522835ec86"
-  integrity sha512-6KeTp+abaRAljPiL1R+q9jA4/ce3r5NrLMpiVOzQFam7Hz2s/+WespCAPk7Cnv5wfII1aZ+IT4Q/V6++QcdnrA==
+"@dendronhq/common-test-utils@0.40.0":
+  version "0.40.0"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-test-utils/-/common-test-utils-0.40.0.tgz#abae1c2fdb1781643d8b4259f4760aa8a44b8245"
+  integrity sha512-Dm6M6Ikrw3zpAZ++rwA5/3SxvXTHg1FWD3KB0yQ//wCgqYt5UlVzyYRrRyLL5qVVOfIafY5RQBQQdsgYAIb8rQ==
   dependencies:
-    "@dendronhq/common-all" "^0.32.7-alpha.0"
-    "@dendronhq/common-server" "^0.33.5-alpha.0"
-    "@dendronhq/pods-core" "^0.33.5-alpha.0"
+    "@dendronhq/common-all" "^0.40.0"
+    "@dendronhq/common-server" "^0.40.0"
+    "@dendronhq/pods-core" "^0.40.0"
     "@types/sinon" "^9.0.9"
     fs-extra "^9.0.1"
     lodash "^4.17.20"
     sinon "^9.2.1"
 
-"@dendronhq/engine-server@0.33.5-alpha.0", "@dendronhq/engine-server@^0.33.5-alpha.0":
-  version "0.33.5-alpha.0"
-  resolved "http://localhost:4873/@dendronhq%2fengine-server/-/engine-server-0.33.5-alpha.0.tgz#04000b37951169493da5285e9d16e863b73574d9"
-  integrity sha512-jfIJ8oiRNFB5cSa0v3b5AcflLQ5z+T4xpEpYO4pYn0j2aRDthz2D5p+BEiri14F3G7tGtXAnU6MaaH2fIw5c+Q==
+"@dendronhq/engine-server@0.40.0", "@dendronhq/engine-server@^0.40.0":
+  version "0.40.0"
+  resolved "http://localhost:4873/@dendronhq%2fengine-server/-/engine-server-0.40.0.tgz#263a3819c7c76e2c966a6d2a697310b5dc5296eb"
+  integrity sha512-wWA5Q0FWw3WReTzmyeSUmNx0KpDiw7h29LG5OHeRKc5R3Jk4ekQVMG43FASSrCB9srRhP9tBS5TyEK2xa4SwrQ==
   dependencies:
-    "@dendronhq/common-all" "^0.32.7-alpha.0"
-    "@dendronhq/common-server" "^0.33.5-alpha.0"
+    "@dendronhq/common-all" "^0.40.0"
+    "@dendronhq/common-server" "^0.40.0"
     "@dendronhq/remark-mermaid" "^0.2.0"
     "@mapbox/rehype-prism" "^0.5.0"
     "@types/fs-extra" "^9.0.1"
@@ -121,6 +122,7 @@
     "@types/nunjucks" "^3.1.4"
     "@types/pino" "^6.3.0"
     "@types/remark-abbr" "^1.4.0"
+    "@types/spark-md5" "^3.0.2"
     "@types/through2" "^2.0.36"
     "@types/unist" "^2.0.3"
     "@types/yamljs" "^0.2.31"
@@ -153,6 +155,7 @@
     remark-toc "^7.0.0"
     remark-variables "^1.4.9"
     remark-wiki-link "^0.0.4"
+    spark-md5 "^3.0.1"
     stream "^0.0.2"
     through2 "^4.0.2"
     unified "^9.1.0"
@@ -162,14 +165,14 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@0.13.16":
-  version "0.13.16"
-  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.16.tgz#1046971348d68ff6741866770cdf87c7b71dda4c"
-  integrity sha512-fU3D31sHS013Eh1MxAWU/1/RQIgru9eLKiGH1V2q1Ui/LxzJpV9SiI/JQR8ve+4FrIegln+mZLf7WgAbvbbB2Q==
+"@dendronhq/mume@0.13.17":
+  version "0.13.17"
+  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.17.tgz#58c041b6473803b127f9f7fb9c43332c0ae9eb06"
+  integrity sha512-tBv7EJgfWtKT1m2nutA0euE+L3S3hxoD3etiORpEOc3iJcQfDdZQmU8eFFdgYM9OM8xmZ8dS3uXnmH2QPnRTtA==
   dependencies:
-    "@dendronhq/common-all" "0.32.7-alpha.0"
-    "@dendronhq/common-test-utils" "0.33.5-alpha.0"
-    "@dendronhq/engine-server" "0.33.5-alpha.0"
+    "@dendronhq/common-all" "0.40.0"
+    "@dendronhq/common-test-utils" "0.40.0"
+    "@dendronhq/engine-server" "0.40.0"
     babyparse "^0.4.6"
     cheerio "^1.0.0-rc.3"
     chrome-location "^1.2.1"
@@ -190,16 +193,16 @@
     vega-loader "^4.1.0"
     yamljs "^0.3.0"
 
-"@dendronhq/pods-core@^0.33.5-alpha.0":
-  version "0.33.5-alpha.0"
-  resolved "http://localhost:4873/@dendronhq%2fpods-core/-/pods-core-0.33.5-alpha.0.tgz#80d0608b0f23fab5d3eb09a147cfec7ee14c20b0"
-  integrity sha512-1PK4Wo8XZGAsNZk4l9rDp0hXv7FV+Nrdkl1LKFd31/nkgSRtowO7L4PYi2VhKiX1dhn4VxJwl1sfhNDY5xpGfg==
+"@dendronhq/pods-core@^0.40.0":
+  version "0.40.0"
+  resolved "http://localhost:4873/@dendronhq%2fpods-core/-/pods-core-0.40.0.tgz#dba9735a383b0a23500dbd674f04d5bd3dd052fd"
+  integrity sha512-vpnlTeDYBqMvFGm2fCUWdMWhYxsvs6w9jgoe+VTkyMYJmZK7ebyO7iy7kd36c2swJnWE5kGcGPXmtJqrFKbvzg==
   dependencies:
-    "@dendronhq/common-all" "^0.32.7-alpha.0"
-    "@dendronhq/common-server" "^0.33.5-alpha.0"
-    "@dendronhq/engine-server" "^0.33.5-alpha.0"
+    "@dendronhq/common-all" "^0.40.0"
+    "@dendronhq/common-server" "^0.40.0"
+    "@dendronhq/engine-server" "^0.40.0"
+    csv-writer "^1.6.0"
     emailjs "^3.4.0"
-    fast-csv "^4.3.2"
     fs-extra "^9.0.1"
     klaw "^3.0.0"
     lodash "^4.17.20"
@@ -214,31 +217,6 @@
     fs-extra "^4.0.1"
     unist-util-visit "^1.1.3"
     which "^1.3.0"
-
-"@fast-csv/format@4.3.5":
-  version "4.3.5"
-  resolved "http://localhost:4873/@fast-csv%2fformat/-/format-4.3.5.tgz#90d83d1b47b6aaf67be70d6118f84f3e12ee1ff3"
-  integrity sha512-8iRn6QF3I8Ak78lNAa+Gdl5MJJBM5vRHivFtMRUWINdevNo00K7OXxS2PshawLKTejVwieIlPmK5YlLu6w4u8A==
-  dependencies:
-    "@types/node" "^14.0.1"
-    lodash.escaperegexp "^4.1.2"
-    lodash.isboolean "^3.0.3"
-    lodash.isequal "^4.5.0"
-    lodash.isfunction "^3.0.9"
-    lodash.isnil "^4.0.0"
-
-"@fast-csv/parse@4.3.6":
-  version "4.3.6"
-  resolved "http://localhost:4873/@fast-csv%2fparse/-/parse-4.3.6.tgz#ee47d0640ca0291034c7aa94039a744cfb019264"
-  integrity sha512-uRsLYksqpbDmWaSmzvJcuApSEe38+6NQZBUsuAyMZKqHxH0g1wcJgsKUvN3WC8tewaqFjBMMGrkHmC+T7k8LvA==
-  dependencies:
-    "@types/node" "^14.0.1"
-    lodash.escaperegexp "^4.1.2"
-    lodash.groupby "^4.6.0"
-    lodash.isfunction "^3.0.9"
-    lodash.isnil "^4.0.0"
-    lodash.isundefined "^3.0.1"
-    lodash.uniq "^4.5.0"
 
 "@hapi/bourne@^2.0.0":
   version "2.0.0"
@@ -445,11 +423,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.15.35.tgz#282b97494e4967649d776c3cc91da5f861a03c40"
   integrity sha512-kmxE30w+R//Vh/+dlVS5DPPyzPtWtrMrJ9+io7jvkPtWv3X43ERA4HTcFEn/R7dtHO3HCMU1y3WKf3NDLYhQEQ==
 
-"@types/node@^14.0.1":
-  version "14.14.34"
-  resolved "http://localhost:4873/@types%2fnode/-/node-14.14.34.tgz#07935194fc049069a1c56c0c274265abeddf88da"
-  integrity sha512-dBPaxocOK6UVyvhbnpFIj2W+S+1cBTkHQbFQfeeJhoKFbzYcVUGHvddeWPSucKATb3F0+pgDq0i6ghEaZjsugA==
-
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
@@ -517,6 +490,11 @@
   integrity sha512-AfqR0fZMoUXUNwusgXKxcE9DPlHNDHQp6nKYUd4PSRpLobF5CCevSpyTEBcVZreqaWKCnGBr9KI1fHMTttoB7A==
   dependencies:
     "@types/node" "*"
+
+"@types/spark-md5@^3.0.2":
+  version "3.0.2"
+  resolved "http://localhost:4873/@types%2fspark-md5/-/spark-md5-3.0.2.tgz#da2e8a778a20335fc4f40b6471c4b0d86b70da55"
+  integrity sha512-82E/lVRaqelV9qmRzzJ1PKTpyrpnT7mwdneKNJB9hUtypZDMggloDfFUCIqRRx3lYRxteCwXSq9c+W71Vf0QnQ==
 
 "@types/through2@^2.0.36":
   version "2.0.36"
@@ -1298,6 +1276,11 @@ css-what@2.1:
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.3.tgz#a6d7604573365fe74686c3f311c56513d88285f2"
   integrity sha512-a+EPoD+uZiNfh+5fxw2nO9QwFa6nJe2Or35fGY6Ipw1R3R4AGz1d1TEZrCegvw2YTmZ0jXirGYlzxxpYSHwpEg==
 
+csv-writer@^1.6.0:
+  version "1.6.0"
+  resolved "http://localhost:4873/csv-writer/-/csv-writer-1.6.0.tgz#d0cea44b6b4d7d3baa2ecc6f3f7209233514bcf9"
+  integrity sha512-NOx7YDFWEsM/fTRAJjRpPp8t+MKRVvniAg9wQlUKx20MFrPs73WLJhFf5iteqrxNYnsy924K3Iroh3yNHeYd2g==
+
 d3-array@^2.7.1:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-2.8.0.tgz#f76e10ad47f1f4f75f33db5fc322eb9ffde5ef23"
@@ -1951,14 +1934,6 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
-
-fast-csv@^4.3.2:
-  version "4.3.6"
-  resolved "http://localhost:4873/fast-csv/-/fast-csv-4.3.6.tgz#70349bdd8fe4d66b1130d8c91820b64a21bc4a63"
-  integrity sha512-2RNSpuwwsJGP0frGsOmTb9oUF+VkFSM4SyLTDgwf2ciHWTarN0lQTC+F2f/t5J9QjW+c65VFIAAu85GsvMIusw==
-  dependencies:
-    "@fast-csv/format" "4.3.5"
-    "@fast-csv/parse" "4.3.6"
 
 fast-deep-equal@^3.1.1:
   version "3.1.3"
@@ -3274,55 +3249,15 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash.escaperegexp@^4.1.2:
-  version "4.1.2"
-  resolved "http://localhost:4873/lodash.escaperegexp/-/lodash.escaperegexp-4.1.2.tgz#64762c48618082518ac3df4ccf5d5886dae20347"
-  integrity sha1-ZHYsSGGAglGKw99Mz11YhtriA0c=
-
 lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
-lodash.groupby@^4.6.0:
-  version "4.6.0"
-  resolved "http://localhost:4873/lodash.groupby/-/lodash.groupby-4.6.0.tgz#0b08a1dcf68397c397855c3239783832df7403d1"
-  integrity sha1-Cwih3PaDl8OXhVwyOXg4Mt90A9E=
-
-lodash.isboolean@^3.0.3:
-  version "3.0.3"
-  resolved "http://localhost:4873/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
-  integrity sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
-
-lodash.isequal@^4.5.0:
-  version "4.5.0"
-  resolved "http://localhost:4873/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
-  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
-
-lodash.isfunction@^3.0.9:
-  version "3.0.9"
-  resolved "http://localhost:4873/lodash.isfunction/-/lodash.isfunction-3.0.9.tgz#06de25df4db327ac931981d1bdb067e5af68d051"
-  integrity sha512-AirXNj15uRIMMPihnkInB4i3NHeb4iBtNg9WRWuK2o31S+ePwwNmDPaTL3o7dTJ+VXNZim7rFs4rxN4YU1oUJw==
-
-lodash.isnil@^4.0.0:
-  version "4.0.0"
-  resolved "http://localhost:4873/lodash.isnil/-/lodash.isnil-4.0.0.tgz#49e28cd559013458c814c5479d3c663a21bfaa6c"
-  integrity sha1-SeKM1VkBNFjIFMVHnTxmOiG/qmw=
-
 lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "http://localhost:4873/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
   integrity sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
-
-lodash.isundefined@^3.0.1:
-  version "3.0.1"
-  resolved "http://localhost:4873/lodash.isundefined/-/lodash.isundefined-3.0.1.tgz#23ef3d9535565203a66cefd5b830f848911afb48"
-  integrity sha1-I+89lTVWUgOmbO/VuDD4SJEa+0g=
-
-lodash.uniq@^4.5.0:
-  version "4.5.0"
-  resolved "http://localhost:4873/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
-  integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20:
   version "4.17.20"
@@ -4833,6 +4768,11 @@ space-separated-tokens@^1.0.0:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/space-separated-tokens/-/space-separated-tokens-1.1.5.tgz#85f32c3d10d9682007e917414ddc5c26d1aa6899"
   integrity sha512-q/JSVd1Lptzhf5bkYm4ob4iWPjx0KiRe3sRFBNrVqbJkFaBm5vbbowy1mymoPNLRa52+oadOhJ+K49wsSeSjTA==
+
+spark-md5@^3.0.1:
+  version "3.0.1"
+  resolved "http://localhost:4873/spark-md5/-/spark-md5-3.0.1.tgz#83a0e255734f2ab4e5c466e5a2cfc9ba2aa2124d"
+  integrity sha512-0tF3AGSD1ppQeuffsLDIOWlKUd3lS92tFxcsrh5Pe3ZphhnoK+oXIBTzOAThZCiuINZLvpiLH/1VS1/ANEJVig==
 
 spdx-correct@^3.0.0:
   version "3.1.1"
