@@ -99,12 +99,6 @@ export class Logger {
       if (shouldShow || Logger.cmpLevels(lvl, "error")) {
         let cleanMsg = stringMsg;
         if (Logger.cmpLevels(lvl, "error")) {
-          if (!_.isUndefined(msg?.friendly)) {
-            cleanMsg = msg.friendly;
-          }
-          if (!_.isUndefined(msg?.err?.friendly)) {
-            cleanMsg = msg.err!.friendly;
-          }
           window.showErrorMessage(cleanMsg);
         } else if (Logger.cmpLevels(lvl, "info")) {
           window.showInformationMessage(cleanMsg);
