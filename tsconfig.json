@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
+    "target": "ES2019",
     "noUnusedLocals": true,
     "sourceMap": true,
     "outDir": "out",
-    "lib": ["es6", "dom"],
+    "lib": ["ES2019", "dom"],
     "rootDir": ".",
+    "importHelpers": true,
     "skipLibCheck": true
   },
   "include": ["src/**/*", "test/**/*"],
