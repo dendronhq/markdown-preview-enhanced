@@ -1,5 +1,5 @@
 // import * as Baby from "babyparse"
-import { DEngineClientV2, EngineConnector } from "@dendronhq/engine-server";
+import { DEngineClient, EngineConnector } from "@dendronhq/engine-server";
 import * as mume from "@dendronhq/mume";
 import { MarkdownEngine } from "@dendronhq/mume";
 import { useExternalAddFileProtocolFunction } from "@dendronhq/mume/out/src/utility";
@@ -341,7 +341,7 @@ export class MarkdownPreviewEnhancedView {
     dendronEngine,
   }: {
     sourceUri: Uri;
-    dendronEngine: DEngineClientV2;
+    dendronEngine: DEngineClient;
   }): MarkdownEngine {
     let engine = this.getEngine(sourceUri);
     if (!engine) {
@@ -465,7 +465,7 @@ export class MarkdownPreviewEnhancedView {
     let engine = this.getEngine(sourceUri);
 
     // DENDRON:START
-    let dendronEngine: DEngineClientV2;
+    let dendronEngine: DEngineClient;
     const connector = EngineConnector.instance();
     if (_.isUndefined(connector._engine)) {
       return vscode.window.showInformationMessage(
