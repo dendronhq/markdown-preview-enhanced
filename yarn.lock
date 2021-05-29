@@ -169,10 +169,10 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@^0.13.22":
-  version "0.13.22"
-  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.22.tgz#1d1c31ae59b81d2d6ea6b4ba5788c66266691847"
-  integrity sha512-K8rSWQ3qwflzJkhdsD2hoMkZOs9PdCarplQR4EVjX/PMwMItlWRFMNgdzvjRWd3OS5WcKpgk763ee6JUu2BGDA==
+"@dendronhq/mume@^0.13.23":
+  version "0.13.23"
+  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.23.tgz#234857cf9fff48cc099d41f583dfc346d0b39f3a"
+  integrity sha512-14Lm4RaFHdyKpDodXR7AIldW8qiyVaMyCw0ZhUSB5/RU7JlUmTc9su+SZZB/+MXdQTG49x4Bb/1vnHUsS17keg==
   dependencies:
     "@dendronhq/common-all" "0.43.5-alpha.0"
     "@dendronhq/common-test-utils" "0.43.5-alpha.0"
