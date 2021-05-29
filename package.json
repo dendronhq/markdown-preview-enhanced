@@ -540,7 +540,8 @@
   "dependencies": {
     "@dendronhq/engine-server": "0.43.5-alpha.0",
     "@dendronhq/mume": "^0.13.24",
-    "@types/vfile": "^3.0.2"
+    "@types/vfile": "^3.0.2",
+    "tslib": "^2.2.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.18",
