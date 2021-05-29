@@ -169,10 +169,10 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@^0.13.23":
-  version "0.13.23"
-  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.23.tgz#234857cf9fff48cc099d41f583dfc346d0b39f3a"
-  integrity sha512-14Lm4RaFHdyKpDodXR7AIldW8qiyVaMyCw0ZhUSB5/RU7JlUmTc9su+SZZB/+MXdQTG49x4Bb/1vnHUsS17keg==
+"@dendronhq/mume@^0.13.24":
+  version "0.13.24"
+  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.24.tgz#c8934b8ae0e03836732ff4592923fda53774cfaf"
+  integrity sha512-+3qE8E283BcMC1Wja+EnMtotvrn55RS/JwI83HKbFO06YHA0LxjkQj9g0lDLRpJeO0DkRJeyDuZ7EoxdmShp8A==
   dependencies:
     "@dendronhq/common-all" "0.43.5-alpha.0"
     "@dendronhq/common-test-utils" "0.43.5-alpha.0"
@@ -192,6 +192,7 @@
     request "^2.88.0"
     slash "^2.0.0"
     temp "^0.9.0"
+    tslib "^2.2.0"
     twemoji "^12.1.5"
     uslug "^1.0.4"
     vega-loader "^4.1.0"
