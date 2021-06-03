@@ -1,11 +1,15 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../mume"
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../mume"
+        }
+    ],
+	"settings": {
+		"dendron.rootDir": ".",
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.suggest.showSnippets": true
+	}
 }
