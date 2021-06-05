@@ -559,7 +559,9 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.0.3"
   },
-  "extensionDependencies": [],
+  "extensionDependencies": [
+    "dendron.dendron"
+  ],
   "engines": {
     "vscode": "^1.40.0"
   }
