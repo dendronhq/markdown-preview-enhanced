@@ -383,7 +383,7 @@ export function activate(context: vscode.ExtensionContext) {
       return vscode.commands.executeCommand(
         "vscode.open",
         vscode.Uri.parse(query.uriString),
-        vscode.ViewColumn.Beside,
+        vscode.ViewColumn.One,
       );
     }
 
