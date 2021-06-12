@@ -538,8 +538,10 @@
     ]
   },
   "dependencies": {
-    "@dendronhq/engine-server": "0.44.1-alpha.7",
-    "@dendronhq/mume": "^0.13.28",
+    "@dendronhq/common-all": "0.45.3",
+    "@dendronhq/common-server": "0.45.3",
+    "@dendronhq/engine-server": "0.45.3",
+    "@dendronhq/mume": "^0.13.29",
     "@types/vfile": "^3.0.2",
     "tslib": "^2.2.0"
   },

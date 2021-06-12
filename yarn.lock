@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@dendronhq/common-all@0.44.1-alpha.7", "@dendronhq/common-all@^0.44.1-alpha.7":
-  version "0.44.1-alpha.7"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-all/-/common-all-0.44.1-alpha.7.tgz#85f74e0f6bea473e62d128b2792a16a8c1059666"
-  integrity sha512-WIJVdFioZmg1/TBLmETFGETJVOsP0oioVaOA28pu65CxZZtOmW40cyXGTlOYoktuCRebeBAE86RKYPxPQoZupg==
+"@dendronhq/common-all@0.45.3", "@dendronhq/common-all@^0.45.3":
+  version "0.45.3"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-all/-/common-all-0.45.3.tgz#b61aa05e39850fb52df9d9f570c86ad3639bb338"
+  integrity sha512-zSbxj/BPZtYwEzqGL9maudgW6TQxr2CshnPClUDMG42IZ3oeq0vs9D+LX4sZiol4TUPVLiKUUFrUKAgUYmQ69Q==
   dependencies:
     "@types/github-slugger" "^1.3.0"
     "@types/lodash" "^4.14.152"
@@ -43,7 +43,6 @@
     "@types/semver" "^7.3.4"
     "@types/title" "^1.0.5"
     "@types/unist" "^2.0.3"
-    "@types/uuid" "^8.0.0"
     "@types/yamljs" "^0.2.31"
     dropbox "^4.0.30"
     github-slugger "^1.3.0"
@@ -53,18 +52,18 @@
     lodash "^4.17.15"
     luxon "^1.25.0"
     minimatch "^3.0.4"
+    nanoid "^3.1.23"
     semver "^7.3.2"
     title "^3.4.2"
-    uuid "^8.1.0"
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/common-server@^0.44.1-alpha.7":
-  version "0.44.1-alpha.7"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-server/-/common-server-0.44.1-alpha.7.tgz#14a96ca11ebbc9bd632f20d414f3ad43a904847f"
-  integrity sha512-WmlUHY8if5kk+076RrUv580IntPfKZnNDsBPkyXiZXf88XqqhZ79NFVMfTiGfGZx1b7Lr+Gob2bxWXK8VjdwYg==
+"@dendronhq/common-server@0.45.3", "@dendronhq/common-server@^0.45.3":
+  version "0.45.3"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-server/-/common-server-0.45.3.tgz#695950069999b33f27100e15c15666c01cee6015"
+  integrity sha512-SqDxmNH57DxcHwB7tK/4egWXYpueqDIMLahm5ZU588nMjKtRW/Hnk7MmhPC0v3DOrte/sBXqgmXjKk4tmKNn5w==
   dependencies:
-    "@dendronhq/common-all" "^0.44.1-alpha.7"
+    "@dendronhq/common-all" "^0.45.3"
     "@types/analytics-node" "^3.1.4"
     "@types/execa" "^2.0.0"
     "@types/express" "^4.17.11"
@@ -90,26 +89,26 @@
     tmp "^0.2.1"
     vscode-uri "^2.1.2"
 
-"@dendronhq/common-test-utils@0.44.1-alpha.7":
-  version "0.44.1-alpha.7"
-  resolved "http://localhost:4873/@dendronhq%2fcommon-test-utils/-/common-test-utils-0.44.1-alpha.7.tgz#b8a107c067cfa381295ffe710794ed7807493697"
-  integrity sha512-mkcCYuL+DGrp4/U8l0Wlvcvzui9soQulUKNuhwzKbZIy1nsiuOOUPgpGngAVbRbYl8rpfSMxvsQgorekTSN8vg==
+"@dendronhq/common-test-utils@0.45.3":
+  version "0.45.3"
+  resolved "http://localhost:4873/@dendronhq%2fcommon-test-utils/-/common-test-utils-0.45.3.tgz#3f841847ab5fa1f3350692bcc8c1c15f88099d97"
+  integrity sha512-czSWisNZRbRm9TJMNZra2PP/yXFreWemQZLblw+WatT2AGw1kTrxdgZFHMeoVPl0UzEkfCI3KWn13wjnUGfi+A==
   dependencies:
-    "@dendronhq/common-all" "^0.44.1-alpha.7"
-    "@dendronhq/common-server" "^0.44.1-alpha.7"
-    "@dendronhq/pods-core" "^0.44.1-alpha.7"
+    "@dendronhq/common-all" "^0.45.3"
+    "@dendronhq/common-server" "^0.45.3"
+    "@dendronhq/pods-core" "^0.45.3"
     "@types/sinon" "^9.0.9"
     fs-extra "^9.0.1"
     lodash "^4.17.20"
     sinon "^9.2.1"
 
-"@dendronhq/engine-server@0.44.1-alpha.7", "@dendronhq/engine-server@^0.44.1-alpha.7":
-  version "0.44.1-alpha.7"
-  resolved "http://localhost:4873/@dendronhq%2fengine-server/-/engine-server-0.44.1-alpha.7.tgz#31a9e0bccd1f5667df7d98eec28d5ec8cfafb9b0"
-  integrity sha512-+nHXiD/d+2VR3dsshRsmSWRIBVox6p5P+0qymocx15YXHKOXcZ2JWoTXJBKxcZGTt8ZEUdzkwa5yETGI1/yLZA==
+"@dendronhq/engine-server@0.45.3", "@dendronhq/engine-server@^0.45.3":
+  version "0.45.3"
+  resolved "http://localhost:4873/@dendronhq%2fengine-server/-/engine-server-0.45.3.tgz#06ef64a3a8f1c73c9798e93bdbcd7ab3a8f061d3"
+  integrity sha512-4LbXTc49lscrNEKuTWNePtyFfczXu2QbxvjZtc3v5NGPV0lEaJm8/bDMYPjAcoQcfzkmhHAc6Rtw8TXlTxMgGg==
   dependencies:
-    "@dendronhq/common-all" "^0.44.1-alpha.7"
-    "@dendronhq/common-server" "^0.44.1-alpha.7"
+    "@dendronhq/common-all" "^0.45.3"
+    "@dendronhq/common-server" "^0.45.3"
     "@dendronhq/remark-mermaid" "^0.2.0"
     "@mapbox/rehype-prism" "^0.5.0"
     "@types/fs-extra" "^9.0.1"
@@ -166,14 +165,14 @@
     vscode-uri "^2.1.2"
     yamljs "^0.3.0"
 
-"@dendronhq/mume@^0.13.28":
-  version "0.13.28"
-  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.28.tgz#8aadb3f80d7dbbe6079fa7723f3e4bbdbbcc0634"
-  integrity sha512-LBVsxa+BTsdqFf8FowtoUMCRiBYzpXnzwzLYHNzsdpFQcKSaM+DyATtySayyUBHf4eIjMDZrirUqI48hJJefiA==
+"@dendronhq/mume@^0.13.29":
+  version "0.13.29"
+  resolved "http://localhost:4873/@dendronhq%2fmume/-/mume-0.13.29.tgz#a12094ca6bc8c434764161eefff96375f99bc524"
+  integrity sha512-QfOm+4HKZLaXKu9RwpZ7FAiHWjPpi11ZQO7NckpjscfO+S8uF3JDF486ePKOBBjTd1Zv8YqtdWlMFJCxEnyXbA==
   dependencies:
-    "@dendronhq/common-all" "0.44.1-alpha.7"
-    "@dendronhq/common-test-utils" "0.44.1-alpha.7"
-    "@dendronhq/engine-server" "0.44.1-alpha.7"
+    "@dendronhq/common-all" "0.45.3"
+    "@dendronhq/common-test-utils" "0.45.3"
+    "@dendronhq/engine-server" "0.45.3"
     babyparse "^0.4.6"
     cheerio "^1.0.0-rc.3"
     chrome-location "^1.2.1"
@@ -195,14 +194,14 @@
     vega-loader "^4.1.0"
     yamljs "^0.3.0"
 
-"@dendronhq/pods-core@^0.44.1-alpha.7":
-  version "0.44.1-alpha.7"
-  resolved "http://localhost:4873/@dendronhq%2fpods-core/-/pods-core-0.44.1-alpha.7.tgz#67f61a0afb799b22e013bc9456d7b630aedf2c32"
-  integrity sha512-AJTFE2ofDQAul7cTBS/XQle7bJgspRusLxn2C9y/NsI8Ehm4ILb32/ZDFOVJFSR+1G8g9MLjCWJx5PO0x+eMOg==
+"@dendronhq/pods-core@^0.45.3":
+  version "0.45.3"
+  resolved "http://localhost:4873/@dendronhq%2fpods-core/-/pods-core-0.45.3.tgz#e091bb9824522c2db06a43b81497ae1dd9c01600"
+  integrity sha512-09mB32nxgojv3iJ4qEMaqljzAYh4uN80Fizgf6yXJTUYRfjy3eLzK5C129b9IhP3nRGfie9AQyA7gKhkigeXJQ==
   dependencies:
-    "@dendronhq/common-all" "^0.44.1-alpha.7"
-    "@dendronhq/common-server" "^0.44.1-alpha.7"
-    "@dendronhq/engine-server" "^0.44.1-alpha.7"
+    "@dendronhq/common-all" "^0.45.3"
+    "@dendronhq/common-server" "^0.45.3"
+    "@dendronhq/engine-server" "^0.45.3"
     csv-writer "^1.6.0"
     emailjs "^3.4.0"
     fs-extra "^9.0.1"
@@ -581,11 +580,6 @@
   version "2.0.3"
   resolved "http://localhost:4873/@types%2funist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
-
-"@types/uuid@^8.0.0":
-  version "8.3.0"
-  resolved "http://localhost:4873/@types%2fuuid/-/uuid-8.3.0.tgz#215c231dff736d5ba92410e6d602050cce7e273f"
-  integrity sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
 
 "@types/vfile-message@*":
   version "2.0.0"
@@ -3674,6 +3668,11 @@ mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
+nanoid@^3.1.23:
+  version "3.1.23"
+  resolved "http://localhost:4873/nanoid/-/nanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
+  integrity sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw==
+
 native-request@^1.0.5:
   version "1.0.8"
   resolved "http://localhost:4873/native-request/-/native-request-1.0.8.tgz#8f66bf606e0f7ea27c0e5995eb2f5d03e33ae6fb"
@@ -5620,11 +5619,6 @@ uuid@^3.2.1, uuid@^3.3.2:
   version "3.4.0"
   resolved "http://localhost:4873/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-uuid@^8.1.0:
-  version "8.3.2"
-  resolved "http://localhost:4873/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
-  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
