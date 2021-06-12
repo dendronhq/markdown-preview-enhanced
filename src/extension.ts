@@ -376,8 +376,17 @@ export function activate(context: vscode.ExtensionContext) {
     });
   }
 
-  function clickTagA(uri, href) {
+  function clickTagA(uri, href: string) {
     href = decodeURIComponent(href);
+    if (href.startsWith("command:dendron.open")) {
+      const query = JSON.parse(vscode.Uri.parse(href).query);
+      return vscode.commands.executeCommand(
+        "vscode.open",
+        vscode.Uri.parse(query.uriString),
+        vscode.ViewColumn.Beside,
+      );
+    }
+
     href = href
       .replace(/^vscode\-resource:\/\//, "")
       .replace(/^vscode\-webview\-resource:\/\/(.+?)\//, "")

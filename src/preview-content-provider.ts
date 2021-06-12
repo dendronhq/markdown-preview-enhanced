@@ -58,11 +58,17 @@ export class MarkdownPreviewEnhancedView {
         useExternalAddFileProtocolFunction(
           (filePath: string, preview: vscode.WebviewPanel) => {
             if (preview) {
-              return preview.webview
+              let out = preview.webview
                 .asWebviewUri(vscode.Uri.file(filePath))
                 .toString(true)
                 .replace(/%3F/gi, "?")
                 .replace(/%23/g, "#");
+              if (filePath.endsWith(".md")) {
+                out = `command:dendron.open?${encodeURIComponent(
+                  JSON.stringify({ uriString: "file://" + filePath }),
+                )}`;
+              }
+              return out;
             } else {
               if (!filePath.startsWith("file://")) {
                 filePath = "file:///" + filePath;
@@ -407,6 +413,7 @@ export class MarkdownPreviewEnhancedView {
         viewOptions,
         {
           enableFindWidget: true,
+          enableCommandUris: true,
           localResourceRoots,
           enableScripts: true, // TODO: This might be set by enableScriptExecution config. But for now we just enable it.
         },
