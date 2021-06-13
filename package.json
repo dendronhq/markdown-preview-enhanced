@@ -519,6 +519,9 @@
           "group": "navigation"
         }
       ]
+    },
+    "untrustedWorkspaces": {
+      "supported": true
     }
   },
   "activationEvents": [
@@ -566,8 +569,5 @@
   ],
   "engines": {
     "vscode": "^1.40.0"
-  },
-  "untrustedWorkspaces": {
-    "supported": true
   }
 }
