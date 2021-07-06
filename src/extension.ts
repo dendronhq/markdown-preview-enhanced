@@ -16,10 +16,11 @@ import {
 let editorScrollDelay = Date.now();
 
 async function setupDendron(context: vscode.ExtensionContext) {
-  const wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
+  let wsRoot = path.dirname(vscode.workspace.workspaceFile.fsPath);
   const fpath = getWSMetaFilePath({ wsRoot });
   if (fs.existsSync(fpath)) {
     const connector = new EngineConnector({ wsRoot });
+    Logger.info("connectingto engine at: " + wsRoot);
     await connector.init({
       onReady: async ({ ws }) => {
         Logger.info("finish connecting, port: " + ws.port);
@@ -380,11 +381,11 @@ export function activate(context: vscode.ExtensionContext) {
     href = decodeURIComponent(href);
     if (href.startsWith("command:dendron.open")) {
       const query = JSON.parse(vscode.Uri.parse(href).query);
-      return vscode.commands.executeCommand(
-        "vscode.open",
-        vscode.Uri.parse(query.uriString),
-        vscode.ViewColumn.One,
-      );
+      // fix for windows
+      query.uriString = query.uriString.replaceAll("//", "/");
+      return vscode.window.showTextDocument(vscode.Uri.parse(query.uriString), {
+        viewColumn: vscode.ViewColumn.One,
+      });
     }
 
     href = href
