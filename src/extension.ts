@@ -381,9 +381,13 @@ export function activate(context: vscode.ExtensionContext) {
     href = decodeURIComponent(href);
     if (href.startsWith("command:dendron.open")) {
       const query = JSON.parse(vscode.Uri.parse(href).query);
-      // fix for windows
-      query.uriString = query.uriString.replaceAll("//", "/");
-      return vscode.window.showTextDocument(vscode.Uri.parse(query.uriString), {
+      let uriString = query.uriString;
+      if (process.platform === "win32") {
+        // fix for windows
+        uriString =
+          "file:/" + query.uriString.split("file://")[1].replaceAll("//", "/");
+      }
+      return vscode.window.showTextDocument(vscode.Uri.parse(uriString), {
         viewColumn: vscode.ViewColumn.One,
       });
     }
