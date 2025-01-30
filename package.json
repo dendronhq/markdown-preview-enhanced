@@ -1,8 +1,8 @@
 {
   "name": "dendron-markdown-preview-enhanced",
   "displayName": "Dendron Markdown Preview Enhanced",
-  "version": "0.10.47",
-  "description": "Markdown Preview Enhanced ported to vscode",
+  "version": "0.10.48",
+  "description": "Port of Markdown Preview Enhanced for Dendron",
   "categories": [
     "Other"
   ],
@@ -10,9 +10,9 @@
     "markdown"
   ],
   "bugs": {
-    "url": "https://github.com/shd101wyy/vscode-markdown-preview-enhanced/issues"
+    "url": "https://github.com/dendronhq/vscode-markdown-preview-enhanced/issues"
   },
-  "repository": "https://github.com/shd101wyy/vscode-markdown-preview-enhanced",
+  "repository": "https://github.com/dendronhq/vscode-markdown-preview-enhanced",
   "license": "NCSA",
   "contributors": [
     "shd101wyy",
